@@ -27,14 +27,35 @@
             </ul>
         </div><!--log in y sign up-->
     </header><!--fin del header-->
-
-
-
-
-
-
-
-
+    <hr>
+    <main>
+        <div class="bienvenida-pan_rayado"><!--Bienvenidad al catalogo de pan rayado-->
+            <h2>Lista de Pan rayado:</h2>
+            <p>
+                ¡Aqui puedes seleccionar nuestros panes rayados de alta calidad!
+            </p>
+        </div>
+        <div class="pan_rayado"><!--INICIO PAN RAYADO COMÚN-->
+            <form action="catalogo_pan_rallado.html" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Pan rayado</legend>
+                    <img src="/imagenes/Pan-Rallado-jpn.webp" alt="Pan_Rallado_Imagen" height="100" width="100"> <br>
+                    <label for="formato_pan_rayado">Formato:</label> <br>
+                    <select name="formato_pan_rayado" id="formato_pan_rayado">
+                        <option value="1KG" selected>1KG</option>
+                        <option value="1/2KG">1/2KG</option>
+                    </select> <br>
+                    <label for="cant_pan_rayado">Cantidad:</label> <br>
+                    <input type="number" max="10" required id="cant_pan_rayado" value="0">
+                    <p>Precio 1KG :$1.200$</p> <!--La idea es que en el carrito se realize automaticamente el calculo en basado al precio de cada producto-->
+                    <p>Precio 1/2KG :$600</p>
+                </fieldset>
+                <input type="submit" value="Añadir al carrito">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div><!--FIN PAN RAYADO COMÚN-->
+    </main>
+<hr>
 
 
 </body>
