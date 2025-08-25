@@ -37,8 +37,9 @@
             </p>
         </div>
         <br>
+
         <!-- ===== Producto 1: Frutos secos cerveceros ===== -->
-        <div class="">
+        <div class="producto_fruto_seco_cervecero">
             <!-- Formulario para añadir al carrito -->
             <form action="catalogo_frutos_secos.html" method="post" enctype="multipart/form-data">
                 <fieldset> <!-- Agrupa el formulario en un recuadro -->
@@ -61,6 +62,35 @@
 
                     <!-- Precios -->
                     <p>Precio x100g :250$</p> 
+                    <p>Precio x500g :2.500$</p>
+                    <p>Precio x1Kg :5.000$</p>
+                </fieldset>
+                <!-- Botones -->
+                <input type="submit" value="Añadir al carrito">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div>
+        <br>
+
+        <!-- ===== Producto 2: Frutos secos crocantes ===== -->
+        <div class="">
+            <form action="catalogo_frutos_secos.html" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Frutos secos crocantes</legend>
+                     <!-- Imagen del producto -->
+                    <img src="../imagenes/frutos_secos_crocantes.png" alt="frutos_secos_crocantes_imagen" height="100" width="100"> <br>
+                    <!-- Selector de formato -->
+                    <label for="formato_frutos_2">Formato:</label> <br>
+                    <select name="formato_frutos_2" id="formato_frutos_2">
+                        <option value="100g" selected>x100g</option>
+                        <option value="500g">x500g</option>
+                        <option value="1Kg">x1Kg</option>
+                    </select> <br>
+                     <!-- Input de cantidad -->
+                    <label for="cant_frutos_2">Cantidad:</label> <br>
+                    <input type="number" max="10" required id="cant_frutos_2" value="0">
+                     <!-- Precios -->
+                    <p>Precio x100g :250$</p>
                     <p>Precio x500g :2.500$</p>
                     <p>Precio x1Kg :5.000$</p>
                 </fieldset>
