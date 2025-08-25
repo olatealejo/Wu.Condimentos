@@ -73,7 +73,7 @@
         <br>
 
         <!-- ===== Producto 2: Frutos secos crocantes ===== -->
-        <div class="">
+        <div class="producto_fruto_seco_crocante">
             <form action="catalogo_frutos_secos.html" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Frutos secos crocantes</legend>
@@ -100,6 +100,32 @@
             </form>
         </div>
         <br>
+
+         <!-- ===== Producto 3: Frutos secos con pasas ===== -->
+        <div class="producto_fruto_seco_con_pasas">
+            <form action="catalogo_frutos_secos.html" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Frutos secos con pasas</legend>
+                    <img src="imagenes/frutos_secos_con_pasas.jpg" alt="frutos_secos_pasas_imagen" height="100" width="100"> <br>
+
+                    <label for="formato_frutos_3">Formato:</label> <br>
+                    <select name="formato_frutos_3" id="formato_frutos_3">
+                        <option value="100g" selected>x100g</option>
+                        <option value="500g">x500g</option>
+                        <option value="1Kg">x1Kg</option>
+                    </select> <br>
+
+                    <label for="cant_frutos_3">Cantidad:</label> <br>
+                    <input type="number" max="10" required id="cant_frutos_3" value="0">
+
+                    <p>Precio x100g :300$</p>
+                    <p>Precio x500g :3.000$</p>
+                    <p>Precio x1Kg :6.000$</p>
+                </fieldset>
+                <input type="submit" value="Añadir al carrito">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div>
 
     
     </main>
