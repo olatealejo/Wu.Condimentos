@@ -37,6 +37,41 @@
             </p>
         </div>
         <br>
+        <!-- ===== Producto 1: Frutos secos cerveceros ===== -->
+        <div class="">
+            <!-- Formulario para añadir al carrito -->
+            <form action="catalogo_frutos_secos.html" method="post" enctype="multipart/form-data">
+                <fieldset> <!-- Agrupa el formulario en un recuadro -->
+                    <legend>Frutos secos cerveceros</legend> <!-- Título del recuadro -->
+                    
+                    <!-- Imagen del producto -->
+                    <img src="../imagenes/frutos_secos_cervecero.png" alt="frutos_secos_cerveceros_imagen" height="100" width="100" > <br>
+                    
+                    <!-- Selector de formato -->
+                    <label for="formato_frutos_1">Formato:</label> <br>
+                    <select name="formato_frutos_1" id="formato_frutos_1">
+                        <option value="100g" selected>x100g</option>
+                        <option value="500g">x500g</option>
+                        <option value="1Kg">x1Kg</option>
+                    </select> <br>
+                    
+                    <!-- Input de cantidad -->
+                    <label for="cant_frutos_1">Cantidad:</label> <br>
+                    <input type="number" max="10" required id="cant_frutos_1" value="0">
+
+                    <!-- Precios -->
+                    <p>Precio x100g :250$</p> 
+                    <p>Precio x500g :2.500$</p>
+                    <p>Precio x1Kg :5.000$</p>
+                </fieldset>
+                <!-- Botones -->
+                <input type="submit" value="Añadir al carrito">
+                <input type="reset" value="Restablecer">
+            </form>
+        </div>
+        <br>
+
+    
     </main>
 </body>
 </html>
