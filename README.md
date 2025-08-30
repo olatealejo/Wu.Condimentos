@@ -11,6 +11,14 @@ Diseño inicial: Ana Paula Cañete Vera.<br>
 El contenido que estas leyendo: Alejo Joaquin Olate Villalba.<br>
 Organizacion: Geronimo Leandro Gomez Tapia.<br>
 <br>
+Asignaciones: <br>
+Index.html: Gero Gomez <br>
+log_in.html: Ana Vera <br>
+sign_up.html: Ana Vera <br>
+catalogo_pan_rallado.html: Gino Forneron <br>
+catalogo_frutos_secos.html: Alejo Olate <br>
+catalogo_condimentos.html: Gero Gomez <br>
+<br>
 Bocetos:
 ![WhatsApp Image 2025-08-26 at 20 28 43 ](https://github.com/user-attachments/assets/6d6fbab2-cd0e-4857-9478-dc7646e57261) 
 ![WhatsApp Image 2025-08-26 at 20 28 44](https://github.com/user-attachments/assets/2e6a9a8c-23a5-48a5-97a6-c3c0a3e5a9a2)
