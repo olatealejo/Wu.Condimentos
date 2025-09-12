@@ -118,3 +118,14 @@ section#precios {
     flex: 1 1 600px;
     min-width: 280px;
 }
+/* Encabezados de las listas */
+.encabezados {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #fdb813;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
