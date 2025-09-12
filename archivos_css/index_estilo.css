@@ -100,4 +100,11 @@ section#precios {
     padding: 0 10px;
     color: #f5f5f5;
 }
-
+/* Contenedor para las dos listas de precios en fila */
+.lista-precios-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1250px;
+}
