@@ -33,3 +33,11 @@ header .titulo h1 {
     font-size: 2.2rem;
     font-weight: 700;
 }
+header nav ul, 
+header .log_in_sign_up ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
