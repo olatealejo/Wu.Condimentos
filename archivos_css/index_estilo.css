@@ -1,0 +1,5 @@
+/* Fuente */
+@font-face {
+        font-family: 'custom-font';
+        src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
+}
