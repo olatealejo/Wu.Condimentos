@@ -19,3 +19,8 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+header {
+    padding: 15px 30px;
+    border-bottom: 3px solid #FFD700;
+    background-color: #000;
+}
