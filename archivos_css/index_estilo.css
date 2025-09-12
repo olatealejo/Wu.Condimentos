@@ -23,3 +23,16 @@ header {
     flex-wrap: wrap;
     font-family: 'custom-font';
 }
+/* modificando titulo */
+header .titulo {
+    flex: 1;
+    text-align: center;
+}
+
+header .titulo h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+}
