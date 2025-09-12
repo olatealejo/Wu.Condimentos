@@ -71,3 +71,22 @@ h2, h3 {
 h2 {
     font-size: 1.8rem;
 }
+/* Main y bienvenida */
+main {
+    padding: 30px;
+}
+
+.bienvenida {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.bienvenida p {
+    font-size: 1rem;
+    color: #ddd;
+}
