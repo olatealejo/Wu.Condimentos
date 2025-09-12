@@ -153,3 +153,11 @@ section#precios {
     width: 25%;
     text-align: right;
 }
+/* contenedor para los mixes */
+.mixes-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1250px;
+}
