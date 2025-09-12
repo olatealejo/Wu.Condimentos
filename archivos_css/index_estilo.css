@@ -129,3 +129,27 @@ section#precios {
     margin-bottom: 10px;
     font-size: 1rem;
 }
+
+/* Items de la lista */
+.lista-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+.producto-encabezado, .producto {
+    width: 50%;
+}
+
+.precio-encabezado, .precio {
+    width: 25%;
+    text-align: right;
+}
