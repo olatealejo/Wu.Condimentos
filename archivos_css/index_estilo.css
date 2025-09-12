@@ -184,3 +184,24 @@ section#precios {
     padding-left: 0;
     font-size: 0.95rem;
 }
+
+/* Precio con tamaño */
+.precios-mix-seco p,
+.precios-mix-cervero p,
+.precios-mix-crocante p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px 12px;
+    background-color: #fdb813;
+    color: #121212;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+}
+
+.precios-mix-seco p span,
+.precios-mix-cervero p span,
+.precios-mix-crocante p span {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
