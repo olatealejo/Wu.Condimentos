@@ -299,3 +299,16 @@ section#precios {
     border: 1px solid #fdb813;
     color: #fdb813;
 }
+/* diseño footer */
+footer {
+    background-color: #1c1c1c;
+    padding: 15px;
+    text-align: center;
+    border-top: 3px solid #fdb813;
+}
+
+footer p {
+    margin: 0;
+    color: #fdb813;
+    font-weight: bold;
+}
