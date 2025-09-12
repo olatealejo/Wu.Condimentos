@@ -175,3 +175,12 @@ section#precios {
     box-sizing: border-box;
 }
 
+/* Listas internas de mixes */
+.precios-mix-seco ul,
+.precios-mix-cervero ul,
+.precios-mix-crocante ul {
+    list-style: disc inside;
+    margin-bottom: 15px;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
