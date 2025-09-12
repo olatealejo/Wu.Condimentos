@@ -24,3 +24,6 @@ header {
     border-bottom: 3px solid #FFD700;
     background-color: #000;
 }
+header .titulo {
+    flex: 1;
+}
