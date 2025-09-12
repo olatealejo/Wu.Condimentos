@@ -2,3 +2,7 @@
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
+body {
+    margin: 0;
+    padding: 0;
+}
