@@ -41,3 +41,12 @@ header .log_in_sign_up ul {
     margin: 0;
     padding: 0;
 }
+header nav a, 
+header .log_in_sign_up a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
