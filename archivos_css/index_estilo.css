@@ -108,3 +108,13 @@ section#precios {
     width: 100%;
     max-width: 1250px;
 }
+/* Las dos listas de precios */
+.lista-precios-1, .lista-precios-2 {
+    background-color: #111;
+    border: 2px solid #fdb813;
+    padding: 15px 15px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    flex: 1 1 600px;
+    min-width: 280px;
+}
