@@ -56,3 +56,6 @@ header ul li a:hover {
 header {
     flex-wrap: wrap;
 }
+header {
+    font-family: 'custom-font';
+}
