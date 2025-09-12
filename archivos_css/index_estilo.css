@@ -17,26 +17,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #000;
     padding: 15px 30px;
     border-bottom: 3px solid #FFD700;
     flex-wrap: wrap;
     font-family: 'custom-font';
 }
-/* modificando titulo */
+
 header .titulo {
     flex: 1;
-    text-align: center;
 }
 
 header .titulo h1 {
     margin: 0;
-    color: #ffffff;
+    color: #fff;
     font-size: 2.2rem;
     font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+    
 }
-/* modificando nav del header */
+
 header nav ul, 
 header .log_in_sign_up ul {
     list-style: none;
@@ -49,14 +48,17 @@ header .log_in_sign_up ul {
 header nav a, 
 header .log_in_sign_up a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
+    font-size: 27px;
     font-weight: 600;
-    padding: 6px 12px;
+    padding: 12px 12px;
     border-radius: 8px;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
 }
-
-/* titulos secciones */
+ 
+header ul li a:hover{
+    color: #FFD700;
+}
+/* ======== TITULOS SECCIONES ======== */
 h2, h3 {
     text-align: center;
     color: #FFD700;
