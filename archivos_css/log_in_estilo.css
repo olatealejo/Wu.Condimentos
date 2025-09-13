@@ -17,3 +17,47 @@ body {
     line-height: 1.6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 15px 30px;
+    border-bottom: 3px solid #FFD700;
+    flex-wrap: wrap;
+    font-family: 'custom-font';
+}
+
+header .titulo {
+    flex: 1;
+}
+
+header .titulo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+header nav ul, 
+header .log_in_sign_up ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a, 
+header .log_in_sign_up a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+header ul li a:hover {
+    color: yellow;
+}
