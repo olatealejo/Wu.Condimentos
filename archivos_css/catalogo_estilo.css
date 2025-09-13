@@ -134,3 +134,14 @@ form {
     width: 260px;
     color: white;
 }
+
+fieldset {
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #FFD700;
+}
