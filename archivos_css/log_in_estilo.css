@@ -164,3 +164,19 @@ button:hover {
     font-size: 2.2rem;
     font-weight: 700;
 }
+
+/* ===== TEXTO ABAJO DE LOGIN ===== */
+.login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
