@@ -88,3 +88,7 @@ h2, h3 {
     font-weight: 600;
     text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.4);
 }
+
+h2 {
+    font-size: 1.8rem;
+}
