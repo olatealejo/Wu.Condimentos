@@ -145,3 +145,19 @@ legend {
     font-weight: bold;
     color: #FFD700;
 }
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="number"],
+select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
