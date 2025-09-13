@@ -125,3 +125,12 @@ main {
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
+
+form {
+    background-color: #111;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    color: white;
+}
