@@ -96,3 +96,10 @@ h2 {
 main {
     padding: 30px;
 }
+
+.bienvenida-condimentos {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
