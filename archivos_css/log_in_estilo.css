@@ -61,3 +61,18 @@ header .log_in_sign_up a {
 header ul li a:hover {
     color: yellow;
 }
+
+/* ===== TITULOS ===== */
+h2, h3 {
+    text-align: center;
+    color: #FFD700;
+    margin: 20px 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
