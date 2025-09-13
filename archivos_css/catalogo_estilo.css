@@ -2,37 +2,45 @@
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #121212;
     color: #f5f5f5;
 }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header {
     padding: 15px 30px;
     border-bottom: 3px solid #FFD700;
     background-color: #000;
 }
+
 header .titulo {
     flex: 1;
 }
+
 header .titulo h1 {
     margin: 0;
     color: #fff;
     font-size: 2.2rem;
     font-weight: 700;
 }
+
 header nav ul, 
 header .log_in_sign_up ul {
     list-style: none;
@@ -41,6 +49,7 @@ header .log_in_sign_up ul {
     margin: 0;
     padding: 0;
 }
+
 header nav a, 
 header .log_in_sign_up a {
     text-decoration: none;
@@ -50,12 +59,20 @@ header .log_in_sign_up a {
     padding: 6px 12px;
     border-radius: 8px;
 }
+
 header ul li a:hover {
     color: yellow;
 }
+
 header {
     flex-wrap: wrap;
 }
+
 header {
     font-family: 'custom-font';
+}
+
+h2, h3 {
+    text-align: center;
+    color: #FFD700;
 }
