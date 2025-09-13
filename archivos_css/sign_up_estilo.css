@@ -71,3 +71,61 @@ main {
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
     color: #FFD700;
 }
+/* ======== FORMULARIO ======== */
+form {
+    background-color: #111;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    color: #FFD700;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-align: center;
+   
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFD700;
+    font-size: 1rem;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus,
+select:focus {
+    border-color: #FFD700;
+    outline: none;
+    background-color: #000;
+    color: #FFD700;
+}
