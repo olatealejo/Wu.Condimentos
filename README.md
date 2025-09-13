@@ -2,8 +2,7 @@ Wu.condimentos <br>
 Grupo: Geronimo gomez, Ana Vera, Gino Forneron y Alejo Olate. <br>
 TP4:<br>
 Para este proyecto nos organizamos mediante reuniones en discord y precenciales en las que nos dividimos y asignamos cada pagina.
-Basado en el empredimiento de Gino Forneron, creamos esta tienda de condimentos con tematica del grupo Wu-Tang Clan, basado en el empredimiento especializado en Frutos secos, pan ralladod
-y condimentos. <br>
+Basado en el empredimiento de Gino Forneron, creamos esta tienda de condimentos con tematica del grupo Wu-Tang Clan.<br>
 
 Creditos: <br>
 Idea principal: Gino Fabrizio Forneron Gavilan. <br>
@@ -25,3 +24,15 @@ Bocetos:
 ![WhatsApp Image 2025-08-26 at 20 28 44 (1)](https://github.com/user-attachments/assets/38a1ea30-aa3c-4d5d-9466-c165f32ffaa2)
 ![WhatsApp Image 2025-08-26 at 20 28 44 (2)](https://github.com/user-attachments/assets/b803160b-94c8-437a-9473-4b01e403c18e)
 ![WhatsApp Image 2025-08-26 at 20 28 45](https://github.com/user-attachments/assets/0bd61c43-7757-4451-87d8-4be977ecee6d)
+
+TP5: <br>
+Para realizar el CSS de esta pagina, nos basamos en los colores primarios del grupo Wu-Tang, los cuales son el negro y amarillo. <br>
+Se utilizo una fuente personalizada para el nav del sitio que representa dicho grupo. <br>
+
+Asignaciones: <br>
+Index_estilo.css: Gero Gomez <br>
+log_in_estilo.css: Ana Vera <br>
+sign_up_estilo.css: Ana Vera <br>
+catalogo_estilo.css: Alejo Olate y Gino Forneron <br>
+<br>
+
