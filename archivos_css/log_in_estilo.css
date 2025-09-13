@@ -76,3 +76,13 @@ h2, h3 {
 h2 {
     font-size: 1.8rem;
 }
+/* ===== MAIN Y FORMULARIO ===== */
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
+    color: #FFD700;
+}
