@@ -129,3 +129,25 @@ select:focus {
     background-color: #000;
     color: #FFD700;
 }
+/* ======== BOTONES ======== */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
