@@ -166,3 +166,12 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
+/* ======== FOOTER ======== */
+footer {
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #FFD700;
+    margin-top: 50px;
+}
