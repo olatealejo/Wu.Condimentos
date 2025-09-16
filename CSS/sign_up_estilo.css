@@ -212,3 +212,10 @@ footer {
 main {
     animation: fadeInUp 1.5s ease forwards;
 }
+/* Inputs con transición suave */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    transition: border 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
+}
