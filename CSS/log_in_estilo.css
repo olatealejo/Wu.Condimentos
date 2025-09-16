@@ -238,3 +238,7 @@ footer {
     }
 }
 /* ===== Animaciones de entrada inicial ===== */
+/* Aplica animación al logo al cargar */
+.logo img {
+    animation: zoomIn 1s ease forwards;
+}
