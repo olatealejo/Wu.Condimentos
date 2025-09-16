@@ -272,3 +272,8 @@ button:hover {
     box-shadow: 0 0 10px #FFD700;
 }
 /* ===== Enlace con subrayado animado ===== */
+/* Configura la posición y transición del enlace */
+.login a {
+    position: relative;
+    transition: color 0.3s;
+}
