@@ -290,12 +290,15 @@ section#precios {
 /* secion de contactos */
 .contactos {
  background-color: #161515;
+
 }
 
 /* posicionamiento*/
 .contactos {
     margin-top: 40px;
     text-align: center;
+    width: 50%;
+    height: 25%;
 }
 
 /* imagenes*/
