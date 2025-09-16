@@ -289,3 +289,6 @@ button:hover {
     transition: width 0.3s ease;
 }
 /* Al pasar el mouse, la línea se extiende */
+.login a:hover::after {
+    width: 100%;
+}
