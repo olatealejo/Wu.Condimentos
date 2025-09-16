@@ -246,3 +246,7 @@ footer {
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
+/* Aplica fadeIn al main (contenedor del formulario) */
+main {
+    animation: fadeInUp 1.5s ease forwards;
+}
