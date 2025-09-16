@@ -254,6 +254,9 @@ section#precios {
     background-color: #333;
     width: 50%;
     height: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px 20px 20px;
 }
 /*posicionamiento */
 .catalogo ul {
