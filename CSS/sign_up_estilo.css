@@ -238,3 +238,8 @@ button:hover {
     box-shadow: 0 0 10px #FFD700;
 }
 /* ===== Enlace con subrayado animado ===== *
+/* animación de subrayado dorado en el enlace de iniciar sesión */
+.login a {
+    position: relative;
+    transition: color 0.3s;
+}
