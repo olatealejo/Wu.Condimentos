@@ -243,3 +243,14 @@ button:hover {
     position: relative;
     transition: color 0.3s;
 }
+/* línea dorada que aparece debajo del enlace al hacer hover */
+.login a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
