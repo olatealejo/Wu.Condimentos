@@ -226,3 +226,14 @@ select:focus {
     background-color: #000;
     border-color: #FFD700;
 }
+/* Botones con transición y efecto hover */
+button {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #FFD700;
+    color: #000;
+    box-shadow: 0 0 10px #FFD700;
+}
