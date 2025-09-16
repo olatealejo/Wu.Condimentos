@@ -252,6 +252,8 @@ section#precios {
 /* Catalogo de productos/enlaces */
 .productos{
     background-color: #333;
+    width: 50%;
+    height: 50%;
 }
 /*posicionamiento */
 .catalogo ul {
