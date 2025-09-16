@@ -251,4 +251,8 @@ main {
     animation: fadeInUp 1.5s ease forwards;
 }
 /* ===== Inputs con efectos al enfocarse ===== */
-
+/* Transición suave en inputs de email y contraseña */
+input[type="email"],
+input[type="password"] {
+    transition: all 0.4s ease;
+}
