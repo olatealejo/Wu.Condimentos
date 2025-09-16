@@ -262,3 +262,7 @@ input:focus {
     background-color: #000;
 }
 /* ===== Botones con efecto hover ===== */
+/* Transición general en botones */
+button {
+    transition: all 0.4s ease;
+}
