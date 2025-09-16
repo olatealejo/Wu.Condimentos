@@ -256,3 +256,8 @@ input[type="email"],
 input[type="password"] {
     transition: all 0.4s ease;
 }
+/* Efecto de zoom y cambio de fondo al enfocar */
+input:focus {
+    transform: scale(1.02);
+    background-color: #000;
+}
