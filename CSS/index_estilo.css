@@ -289,18 +289,13 @@ section#precios {
 }
 /* secion de contactos */
 .contactos {
- background-color: #161515;
-
-}
-
-/* posicionamiento*/
-.contactos {
-    margin-top: 40px;
+    background-color: #161515;
     text-align: center;
     width: 25%;
     height: 25%;
     text-align: center;
     margin: auto;
+    margin-top: 50px;
     padding: 10px 20px 20px 20px;
     border: 3px solid #fdb813 ;
     border-radius: 20px;
