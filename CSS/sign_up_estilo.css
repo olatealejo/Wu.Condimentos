@@ -219,3 +219,10 @@ input[type="password"],
 select {
     transition: border 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
 }
+/* Efecto de zoom ligero al enfocar */
+input:focus,
+select:focus {
+    transform: scale(1.02);
+    background-color: #000;
+    border-color: #FFD700;
+}
