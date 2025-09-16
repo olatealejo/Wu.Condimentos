@@ -250,6 +250,10 @@ footer {
 main {
     animation: fadeInUp 1.5s ease forwards;
 }
+/* animación fadeIn para el título del formulario */
+legend {
+    animation: fadeInUp 1.4s ease forwards;
+}
 /* ===== Inputs con efectos al enfocarse ===== */
 /* Transición suave en inputs de email y contraseña */
 input[type="email"],
