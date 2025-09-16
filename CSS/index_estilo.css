@@ -302,6 +302,8 @@ section#precios {
     text-align: center;
     margin: auto;
     padding: 10px 20px 20px 20px;
+    border: 3px solid #fdb813 ;
+    border-radius: 20px;
 }
 
 /* imagenes*/
