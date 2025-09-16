@@ -208,3 +208,7 @@ footer {
     animation: fadeInUp 1.2s ease forwards;
 }
 /* ===== Animaciones para main y formulario ===== */
+/* Fade in hacia arriba para el main */
+main {
+    animation: fadeInUp 1.5s ease forwards;
+}
