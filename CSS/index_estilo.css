@@ -288,6 +288,9 @@ section#precios {
     height: 100%;
 }
 /* secion de contactos */
+.contactos {
+ background-color: #161515;
+}
 
 /* posicionamiento*/
 .contactos {
