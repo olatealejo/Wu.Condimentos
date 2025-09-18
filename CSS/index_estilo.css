@@ -375,4 +375,9 @@ footer {
 
 /* Móviles pequeños (max-width: 600px) */
 @media (max-width: 600px) {
+     header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
 }
