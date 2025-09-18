@@ -380,4 +380,9 @@ footer {
         align-items: center;
         padding: 10px 15px;
     }
+       header .titulo h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 10px 0;
+    }
 }
