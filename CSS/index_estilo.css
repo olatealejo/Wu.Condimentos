@@ -368,3 +368,10 @@ footer p {
         transform: translateY(0);
     }
 }
+/* Zoom in para el logo */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
