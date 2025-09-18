@@ -379,3 +379,8 @@ footer p {
         transform: scale(1);
     }
 }
+/*Animaciones de entrada para header*/
+/* Aplica animación zoom al logo */
+.logo img {
+    animation: zoomIn 1s ease forwards;
+}
