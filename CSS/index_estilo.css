@@ -442,4 +442,8 @@ footer {
     .contactos {
         width: 70%;
     }
+    .catalogo ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
     }
