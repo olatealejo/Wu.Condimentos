@@ -457,4 +457,8 @@ footer {
         font-size: 24px;
         padding: 10px;
     }
+        .bienvenida {
+        max-width: 700px;
+    }
+
 }
