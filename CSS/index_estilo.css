@@ -327,35 +327,6 @@ footer p {
     color: #fdb813;
     font-weight: bold;
 }
-
-/* Esto sirve para cuando se utilizen en celulares se ajusten los elementos de la pagina */
-
-@media (max-width: 900px) {
-    .lista-precios-row,
-    .mixes-row,
-    .pan-rallado-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lista-precios-1, .lista-precios-2,
-    .precios-mix-seco,
-    .precios-mix-cervero,
-    .precios-mix-crocante,
-    .precios-pan-rallado {
-        max-width: 100%;
-        flex: none;
-    }
-      .catalogo ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* ← Esto permite que pasen a otra fila si no entran */
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-    margin: 40px 0;
-}
-}
 /* ===== Animaciones base para la pagina ===== */
 /* Fade in hacia arriba para el título */
 @keyframes fadeInUp {
