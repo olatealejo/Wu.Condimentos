@@ -422,4 +422,18 @@ footer {
         .bienvenida {
         max-width: 90%;
     }
+
+    .lista-precios-row,
+    .mixes-row,
+    .pan-rallado-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista-precios-1, .lista-precios-2,
+    .precios-mix-seco, .precios-mix-cervero, .precios-mix-crocante,
+    .precios-pan-rallado {
+        max-width: 100%;
+    }
+
     }
