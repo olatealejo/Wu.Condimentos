@@ -411,3 +411,7 @@ footer {
         height: auto;
     }
 }
+/* Tablets y pantallas medianas (max-width: 768px) */
+@media (max-width: 768px) {
+
+    }
