@@ -263,6 +263,9 @@ button:hover {
     width: 100%;
 }
 /* ===== Animación para Nav ===== *
-
+/* Aplica animación fadeInUp a las listas/enlaces del nav */
+nav {
+    animation: fadeInUp 1.4s ease forwards;
+}
 
 
