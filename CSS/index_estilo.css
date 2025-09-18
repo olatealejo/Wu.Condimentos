@@ -416,4 +416,7 @@ footer {
     header {
         padding: 12px 20px;
     }
+        header .titulo h1 {
+        font-size: 1.8rem;
+    }
     }
