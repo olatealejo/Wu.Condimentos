@@ -413,5 +413,7 @@ footer {
 }
 /* Tablets y pantallas medianas (max-width: 768px) */
 @media (max-width: 768px) {
-
+    header {
+        padding: 12px 20px;
+    }
     }
