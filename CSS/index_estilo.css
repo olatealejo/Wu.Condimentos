@@ -396,3 +396,7 @@ nav, .log_in_sign_up{
 main {
     animation: fadeInUp 1.5s ease forwards;
 }
+/*Animaciones para el footer*/
+footer {
+    animation: fadeInUp 1.5s ease forwards;
+}
