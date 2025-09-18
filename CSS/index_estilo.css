@@ -460,5 +460,7 @@ footer {
         .bienvenida {
         max-width: 700px;
     }
-
+    .productos {
+        width: 60%;
+    }
 }
