@@ -384,3 +384,7 @@ footer p {
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
+/* Aplica animación fadeInUp al título del header */
+.titulo h1 {
+    animation: fadeInUp 1.2s ease forwards;
+}
