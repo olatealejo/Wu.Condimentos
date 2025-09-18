@@ -452,4 +452,9 @@ footer {
     header .titulo h1 {
         font-size: 2rem;
     }
+        header nav a,
+    header .log_in_sign_up a {
+        font-size: 24px;
+        padding: 10px;
+    }
 }
