@@ -388,3 +388,7 @@ footer p {
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
+/* Aplica animación fadeInUp a las listas/enlaces del nav */
+nav, .log_in_sign_up{
+    animation: fadeInUp 1.4s ease forwards;
+}
