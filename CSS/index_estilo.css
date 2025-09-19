@@ -306,7 +306,7 @@ section#precios {
 .contactos .img_logos_enlaces img {
     margin: 0 10px;
     border-radius: 50%;
-    border: 2px solid #fdb813;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
 }
 /* Correo Electronico */
 
