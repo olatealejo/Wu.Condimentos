@@ -331,3 +331,9 @@ footer {
      form {
         padding: 20px;
     }
+    /* header cambia a columna para que no quede apretado */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
