@@ -293,3 +293,7 @@ footer {
         padding: 15px;
         max-width: 100%; /* ancho completo para mejor adaptación */
     }
+     /* formulario con padding reducido para pantallas pequeñas */
+     form {
+        padding: 20px;
+    }
