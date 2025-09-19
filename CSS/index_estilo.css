@@ -200,6 +200,12 @@ section#precios {
     text-align: center;
     margin: 0;
 }
+.precios-mix-cervero p{
+    margin-top: 62px;
+}
+.precios-mix-seco p{
+    margin-top: 39px;
+}
 
 .precios-mix-seco p span,
 .precios-mix-cervero p span,
