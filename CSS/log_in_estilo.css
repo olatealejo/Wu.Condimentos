@@ -357,3 +357,9 @@ footer {
         width: 100%;
         margin-top: 10px;
     }
+     /* contenedor de botones en columna para mejor espaciado */
+     .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
