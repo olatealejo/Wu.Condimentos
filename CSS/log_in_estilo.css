@@ -342,8 +342,13 @@ footer {
         font-size: 22px; /* tamaño más pequeño para tablets y móviles */
     }
 
-    /* Si quieres que los <li> estén en columna en móviles */
     header nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+    /* título ocupa todo el ancho y se centra */
+    .titulo h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
     }
