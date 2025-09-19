@@ -311,3 +311,9 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+    /* título ocupa todo el ancho y se centra */
+    .titulo h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+    }
