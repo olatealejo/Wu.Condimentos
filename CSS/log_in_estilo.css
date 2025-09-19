@@ -297,3 +297,14 @@ button:hover {
     width: 100%;
 }
 /* ===== Animaciones para main ===== */
+main {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    position: relative; /* importante para evitar conflictos de layout */
+    z-index: 1;
+}
+
+main:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
+}
