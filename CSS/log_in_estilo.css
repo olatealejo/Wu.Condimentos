@@ -309,3 +309,7 @@ main:hover {
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
 }
 /* ===== Animación para Nav ===== *
+/* Aplica animación fadeInUp a las listas/enlaces del nav */
+nav {
+    animation: fadeInUp 1.4s ease forwards;
+}
