@@ -352,3 +352,8 @@ footer {
         text-align: center;
         width: 100%;
     }
+    /* botones ocupan ancho completo para facilidad táctil */
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
