@@ -337,3 +337,13 @@ footer {
         align-items: flex-start;
         gap: 10px;
     }
+    /*  nav con flex-direction en columna */
+    header nav a {
+        font-size: 22px; /* tamaño más pequeño para tablets y móviles */
+    }
+
+    /* Si quieres que los <li> estén en columna en móviles */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
