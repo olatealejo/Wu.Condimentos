@@ -321,3 +321,9 @@ footer {
 /* ===== MEDIA QUERY PARA TABLETS Y MÓVILES ===== */
 /*  Ajustes de layout para pantallas medianas (tablets) */
 @media (max-width: 768px) {
+    /* Main ocupa casi todo el ancho y reduce márgenes y padding */
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+        max-width: 100%; /* ancho completo para mejor adaptación */
+    }
