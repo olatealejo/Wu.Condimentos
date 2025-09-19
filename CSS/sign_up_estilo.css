@@ -285,3 +285,5 @@ footer {
     animation: fadeInUp 1.5s ease forwards;
 }
 /* ===== MEDIA QUERY PARA TABLETS Y MÓVILES ===== */
+/*  Ajustes de layout para pantallas medianas (tablets) */
+@media (max-width: 768px) {
