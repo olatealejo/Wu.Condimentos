@@ -307,3 +307,7 @@ footer {
      header nav a {
         font-size: 22px; /* tamaño más pequeño para tablets y móviles */
     }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
