@@ -512,3 +512,7 @@ header nav a, header .log_in_sign_up a {
     transform: scale(1.2);
     box-shadow: 0 0 15px rgba(255,215,0,0.7);
   }
+  /* Animación del logo*/
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+  }
