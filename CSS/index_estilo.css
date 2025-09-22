@@ -581,3 +581,7 @@ footer {
     font-weight: bold;
     pointer-events: none;
   }
+  .catalogo li:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
