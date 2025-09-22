@@ -566,3 +566,6 @@ footer {
   .catalogo li:hover img {
     transform: scale(1.1);
   }
+/* Animacion del data-text */
+.catalogo li::after {
+  }
