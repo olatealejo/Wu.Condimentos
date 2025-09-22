@@ -524,3 +524,7 @@ header nav a, header .log_in_sign_up a {
 .bienvenida {
     transition: transform .3s ease, box-shadow .3s ease;
   }
+  .bienvenida:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255,215,0,0.25);
+  }
