@@ -532,4 +532,7 @@ header nav a, header .log_in_sign_up a {
 footer {
     transition: background-color 1.5s ease, box-shadow 1.5s ease;
   }
-  
+  footer:hover {
+    background-color: #000; 
+    box-shadow: 0 -6px 20px rgba(255,215,0,0.3);
+  }
