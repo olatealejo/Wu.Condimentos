@@ -579,4 +579,5 @@ footer {
     opacity: 0;
     transition: all .3s ease;
     font-weight: bold;
+    pointer-events: none;
   }
