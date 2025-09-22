@@ -515,4 +515,5 @@ header nav a, header .log_in_sign_up a {
   /* Animación del logo*/
 @keyframes float {
     0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
   }
