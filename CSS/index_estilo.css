@@ -552,4 +552,6 @@ footer {
 .catalogo li {
     position: relative;
     overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease;
+    cursor: pointer;
   }
