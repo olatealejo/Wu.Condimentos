@@ -520,3 +520,7 @@ header nav a, header .log_in_sign_up a {
   .logo img {
     animation: float 4s ease-in-out infinite;
   }
+/* transition para la bienvenida */
+.bienvenida {
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
