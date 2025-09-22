@@ -555,3 +555,7 @@ footer {
     transition: transform .3s ease, box-shadow .3s ease;
     cursor: pointer;
   }
+  .catalogo li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+  }
