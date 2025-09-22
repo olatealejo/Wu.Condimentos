@@ -563,3 +563,6 @@ footer {
     transition: transform .4s ease;
     display: block;
   }
+  .catalogo li:hover img {
+    transform: scale(1.1);
+  }
