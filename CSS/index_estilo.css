@@ -577,4 +577,6 @@ footer {
     padding: 5px 10px;
     border-radius: 8px;
     opacity: 0;
+    transition: all .3s ease;
+    font-weight: bold;
   }
