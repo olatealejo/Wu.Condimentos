@@ -492,3 +492,9 @@ header nav a, header .log_in_sign_up a {
     transform: scaleX(1);
     transform-origin: left;
   }
+/* Efecto en listas de precios*/
+.lista-precios-1, .lista-precios-2,
+.precios-mix-seco, .precios-mix-cervero, .precios-mix-crocante,
+.precios-pan-rallado {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
