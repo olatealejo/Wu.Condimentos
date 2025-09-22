@@ -571,4 +571,5 @@ footer {
     content: attr(data-text);
     bottom: 10px;
     left: 50%;
+    transform: translateX(-50%) translateY(20px);
   }
