@@ -483,4 +483,6 @@ header nav a, header .log_in_sign_up a {
     position: absolute;
     left: 0; bottom: 4px;
     width: 100%; height: 2px;
+    background: #FFD700;
+    transform: scaleX(0);
   }
