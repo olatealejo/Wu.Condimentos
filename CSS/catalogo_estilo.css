@@ -243,3 +243,7 @@ main {
 footer { 
     animation: fadeInUp 1.5s ease forwards; 
 }
+
+.logo img { 
+    animation: zoomIn 1s ease forwards;
+ }
