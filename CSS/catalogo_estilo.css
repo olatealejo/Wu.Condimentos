@@ -223,3 +223,5 @@ footer p {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
+
+header .titulo h1 { animation: fadeInUp 1.2s ease forwards; }
