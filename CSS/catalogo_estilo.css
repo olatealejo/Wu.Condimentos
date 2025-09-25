@@ -278,3 +278,8 @@ header nav a::after, header .log_in_sign_up a::after {
   transform-origin: right;
   transition: transform .3s ease;
 }
+
+header nav a:hover::after, header .log_in_sign_up a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
