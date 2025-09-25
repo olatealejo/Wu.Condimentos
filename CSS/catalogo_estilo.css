@@ -301,3 +301,8 @@ header nav a:hover, header .log_in_sign_up a:hover { color: #FFD700; }
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(255,215,0,0.25);
 }
+
+.bienvenida-pan_rayado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255,215,0,0.25);
+}
