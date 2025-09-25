@@ -224,6 +224,14 @@ footer p {
   50% { transform: translateY(-6px); }
 }
 
-header .titulo h1 { animation: fadeInUp 1.2s ease forwards; }
+header .titulo h1 {
+     animation: fadeInUp 1.2s ease forwards;
+     }
 
-nav { animation: fadeInUp 1.4s ease forwards; }
+nav { 
+    animation: fadeInUp 1.4s ease forwards; 
+}
+
+.log_in_sign_up {
+     animation: fadeInUp 1.4s ease forwards; 
+    }
