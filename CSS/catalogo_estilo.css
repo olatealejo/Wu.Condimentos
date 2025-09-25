@@ -251,3 +251,8 @@ footer {
  .logo img { 
     animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite; 
 }
+
+header nav a, header .log_in_sign_up a {
+  position: relative;
+  transition: color .3s ease;
+}
