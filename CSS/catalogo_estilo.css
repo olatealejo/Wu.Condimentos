@@ -393,5 +393,9 @@ header nav a:active, header .log_in_sign_up a:active {
   transform: translateY(1px); 
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
 
 
