@@ -239,3 +239,7 @@ nav {
 main { 
     animation: fadeInUp 1.5s ease forwards; 
 }
+
+footer { 
+    animation: fadeInUp 1.5s ease forwards; 
+}
