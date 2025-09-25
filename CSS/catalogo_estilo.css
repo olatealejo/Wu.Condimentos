@@ -385,6 +385,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   will-change: transform, box-shadow; 
 }
 
+main, footer { 
+  will-change: transform, opacity; 
+}
+
 
 
 
