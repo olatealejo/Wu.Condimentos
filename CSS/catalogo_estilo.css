@@ -375,4 +375,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   transition: outline-color .2s ease;
 }
 
+.logo img { 
+  will-change: transform; 
+}
+
+
 
