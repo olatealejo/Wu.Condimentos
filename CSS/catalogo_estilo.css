@@ -364,4 +364,9 @@ nav {
   animation-duration: 1.2s; 
 }
 
+header .titulo h1:hover {
+  text-shadow: 0 0 8px rgba(255,215,0,.25);
+  transition: text-shadow .3s ease;
+}
+
 
