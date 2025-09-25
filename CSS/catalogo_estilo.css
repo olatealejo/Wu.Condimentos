@@ -369,4 +369,10 @@ header .titulo h1:hover {
   transition: text-shadow .3s ease;
 }
 
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #fdb813;
+  outline-offset: 2px;
+  transition: outline-color .2s ease;
+}
+
 
