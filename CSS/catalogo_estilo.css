@@ -379,5 +379,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   will-change: transform; 
 }
 
+.bienvenida-condimentos,
+.bienvenida-frutos-secos,
+.bienvenida-pan_rayado { 
+  will-change: transform, box-shadow; 
+}
+
+
 
 
