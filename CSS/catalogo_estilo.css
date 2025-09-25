@@ -285,3 +285,9 @@ header nav a:hover::after, header .log_in_sign_up a:hover::after {
 }
 
 header nav a:hover, header .log_in_sign_up a:hover { color: #FFD700; }
+
+.bienvenida-condimentos,
+.bienvenida-frutos-secos,
+.bienvenida-pan_rayado {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
