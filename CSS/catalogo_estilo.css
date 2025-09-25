@@ -247,3 +247,7 @@ footer {
 .logo img { 
     animation: zoomIn 1s ease forwards;
  }
+
+ .logo img { 
+    animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite; 
+}
