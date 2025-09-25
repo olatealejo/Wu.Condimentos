@@ -225,3 +225,5 @@ footer p {
 }
 
 header .titulo h1 { animation: fadeInUp 1.2s ease forwards; }
+
+nav { animation: fadeInUp 1.4s ease forwards; }
