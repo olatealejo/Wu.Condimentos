@@ -308,12 +308,12 @@ main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
 }
-/* ===== Animación para Nav ===== *
+/* ===== Animación para Nav ===== */
 /* Aplica animación fadeInUp a las listas/enlaces del nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
-/* ===== Animación para el footer ===== *
+/* ===== Animación para el footer ===== */
 /* Animaciones para el footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
@@ -359,7 +359,8 @@ footer {
     }
      /* contenedor de botones en columna para mejor espaciado */
      .botones {
+        display: flex;
         flex-direction: column;
         gap: 10px;
-    }     
+    }
 }
