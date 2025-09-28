@@ -295,7 +295,7 @@ header nav a::after {
 }
 
 header nav a:hover {
-    color: #FFD700; /* Cambia el color del texto en hover */
+    color: #FFD700; 
 }
 
 header nav a:hover::after {
