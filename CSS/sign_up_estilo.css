@@ -201,6 +201,18 @@ footer {
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.logo img {
+    animation: float 4s ease-in-out infinite;
+}
 /* ===== Animaciones para main y formulario ===== */
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
