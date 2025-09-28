@@ -275,6 +275,33 @@ button:hover {
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
+/* ===== Efecto subrayado animado para enlaces del nav ===== */
+header nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover {
+    color: #FFD700; /* Cambia el color del texto en hover */
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
 /* ===== Animación para el footer ===== */
 footer {
     animation: fadeInUp 1.5s ease forwards;
