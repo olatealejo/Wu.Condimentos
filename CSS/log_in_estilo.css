@@ -215,7 +215,6 @@ footer {
     gap: 20px;
 }
 /* ===== Animaciones base ===== */
-/* Fade in hacia arriba para una entrada suave */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -226,7 +225,6 @@ footer {
         transform: translateY(0);
     }
 }
-/* Zoom in para agrandar suavemente un elemento */
 @keyframes zoomIn {
     0% {
         opacity: 0;
@@ -238,50 +236,40 @@ footer {
     }
 }
 /* ===== Animaciones de entrada inicial ===== */
-/* Aplica animación al logo al cargar */
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
-/* Aplica fadeIn al título principal */
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
-/* Aplica fadeIn al main (contenedor del formulario) */
 main {
     animation: fadeInUp 1.5s ease forwards;
 }
-/* animación fadeIn para el título del formulario */
 legend {
     animation: fadeInUp 1.4s ease forwards;
 }
 /* ===== Inputs con efectos al enfocarse ===== */
-/* Transición suave en inputs de email y contraseña */
 input[type="email"],
 input[type="password"] {
     transition: all 0.4s ease;
 }
-/* Efecto de zoom y cambio de fondo al enfocar */
 input:focus {
     transform: scale(1.02);
     background-color: #000;
 }
 /* ===== Botones con efecto hover ===== */
-/* Transición general en botones */
 button {
     transition: all 0.4s ease;
 }
-/* Al hacer hover: zoom y sombra dorada */
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #FFD700;
 }
 /* ===== Enlace con subrayado animado ===== */
-/* Configura la posición y transición del enlace */
 .login a {
     position: relative;
     transition: color 0.3s;
 }
-/* Línea dorada oculta bajo el enlace */
 .login a::after {
     content: "";
     position: absolute;
@@ -292,7 +280,6 @@ button:hover {
     background-color: #FFD700;
     transition: width 0.3s ease;
 }
-/* Al pasar el mouse, la línea se extiende */
 .login a:hover::after {
     width: 100%;
 }
@@ -300,7 +287,7 @@ button:hover {
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
-    position: relative; /* importante para evitar conflictos de layout */
+    position: relative; 
     z-index: 1;
 }
 
@@ -341,61 +328,50 @@ header nav a::after {
 }
 
 header nav a:hover {
-    color: #FFD700; /* Cambia el color del texto en hover */
+    color: #FFD700; 
 }
 
 header nav a:hover::after {
     width: 100%;
 }
-/* Aplica animación fadeInUp a las listas/enlaces del nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
 /* ===== Animación para el footer ===== */
-/* Animaciones para el footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
 }
 /* ===== MEDIA QUERY PARA TABLETS Y MÓVILES ===== */
-/*  Ajustes de layout para pantallas medianas (tablets) */
 @media (max-width: 768px) {
-    /* Main ocupa casi todo el ancho y reduce márgenes y padding */
     main {
         margin: 20px 10px;
         padding: 15px;
-        max-width: 100%; /* ancho completo para mejor adaptación */
+        max-width: 100%; 
     }
-     /* formulario con padding reducido para pantallas pequeñas */
      form {
         padding: 20px;
     }
-    /* header cambia a columna para que no quede apretado */
     header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    /*  nav con flex-direction en columna */
     header nav a {
-        font-size: 22px; /* tamaño más pequeño para tablets y móviles */
+        font-size: 22px; 
     }
-
     header nav ul {
         flex-direction: column;
         gap: 10px;
     }
-    /* título ocupa todo el ancho y se centra */
     .titulo h1 {
         font-size: 1.8rem;
         text-align: center;
         width: 100%;
     }
-    /* botones ocupan ancho completo para facilidad táctil */
     button {
         width: 100%;
         margin-top: 10px;
     }
-     /* contenedor de botones en columna para mejor espaciado */
      .botones {
         display: flex;
         flex-direction: column;
