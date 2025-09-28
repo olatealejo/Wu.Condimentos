@@ -309,6 +309,19 @@ main:hover {
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
 }
 /* ===== Animación para Nav ===== */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.logo img {
+    animation: float 4s ease-in-out infinite;
+}
+
 /* Aplica animación fadeInUp a las listas/enlaces del nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
