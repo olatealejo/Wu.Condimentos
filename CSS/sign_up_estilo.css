@@ -101,8 +101,6 @@ label {
     font-weight: 600;
     color: #FFD700;
 }
-
-/* Inputs */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -176,7 +174,6 @@ footer {
     margin-top: 50px;
 }
 /* ===== Animaciones base para header ===== */
-/* Fade in hacia arriba para el título */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -187,7 +184,6 @@ footer {
         transform: translateY(0);
     }
 }
-/* Zoom in para el logo */
 @keyframes zoomIn {
     0% {
         opacity: 0;
@@ -199,20 +195,17 @@ footer {
     }
 }
 /* ===== Animaciones de entrada para header ===== */
-/* Aplica animación zoom al logo */
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
-/* Aplica animación fadeInUp al título del header */
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
 /* ===== Animaciones para main y formulario ===== */
-/* Efecto hover con zoom en el main */
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
-    position: relative; /* importante para evitar conflictos de layout */
+    position: relative;
     z-index: 1;
 }
 
@@ -220,29 +213,24 @@ main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
 }
-/* animación fadeIn para el título del formulario */
 legend {
     animation: fadeInUp 1.4s ease forwards;
 }
-/* Fade in hacia arriba para el main */
 main {
     animation: fadeInUp 1.5s ease forwards;
 }
-/* Inputs con transición suave */
 input[type="text"],
 input[type="email"],
 input[type="password"],
 select {
     transition: border 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
 }
-/* Efecto de zoom ligero al enfocar */
 input:focus,
 select:focus {
     transform: scale(1.02);
     background-color: #000;
     border-color: #FFD700;
 }
-/* Botones con transición y efecto hover */
 button {
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
@@ -254,12 +242,10 @@ button:hover {
     box-shadow: 0 0 10px #FFD700;
 }
 /* ===== Enlace con subrayado animado ===== *
-/* animación de subrayado dorado en el enlace de iniciar sesión */
 .login a {
     position: relative;
     transition: color 0.3s;
 }
-/* línea dorada que aparece debajo del enlace al hacer hover */
 .login a::after {
     content: "";
     position: absolute;
@@ -270,59 +256,48 @@ button:hover {
     background-color: #FFD700;
     transition: width 0.3s ease;
 }
-/* al pasar el mouse sobre el enlace, se expande la línea dorada */
 .login a:hover::after {
     width: 100%;
 }
 /* ===== Animación para Nav ===== *
-/* Aplica animación fadeInUp a las listas/enlaces del nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
 /* ===== Animación para el footer ===== *
-/* Animaciones para el footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
 }
 /* ===== MEDIA QUERY PARA TABLETS Y MÓVILES ===== */
-/*  Ajustes de layout para pantallas medianas (tablets) */
 @media (max-width: 768px) {
-     /* Main ocupa casi todo el ancho y reduce márgenes y padding */
      main {
         margin: 20px 10px;
         padding: 15px;
-        max-width: 100%; /* ancho completo para mejor adaptación */
+        max-width: 100%; 
     }
-     /* formulario con padding reducido para pantallas pequeñas */
      form {
         padding: 20px;
     }
-     /* header cambia a columna para que no quede apretado */
      header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-     /*  nav con flex-direction en columna */
      header nav a {
-        font-size: 22px; /* tamaño más pequeño para tablets y móviles */
+        font-size: 22px; 
     }
     header nav ul {
         flex-direction: column;
         gap: 10px;
     }
-    /* título ocupa todo el ancho y se centra */
     .titulo h1 {
         font-size: 1.8rem;
         text-align: center;
         width: 100%;
     }
-     /* botones ocupan ancho completo para facilidad táctil */
      button {
         width: 100%;
         margin-top: 10px;
     }
-     /* contenedor de botones en columna para mejor espaciado */
      .botones {
         flex-direction: column;
         gap: 10px;
