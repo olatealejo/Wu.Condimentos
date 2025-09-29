@@ -495,12 +495,12 @@ header nav a, header .log_in_sign_up a {
 /* Efecto en listas de precios*/
 .lista-precios-1, .lista-precios-2,
 .precios-mix-seco, .precios-mix-cervero, .precios-mix-crocante,
-.precios-pan-rallado {
+.precios-mix-pan-rallado:hover, .precios-pan-rallado:hover {
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .lista-precios-1:hover, .lista-precios-2:hover,
 .precios-mix-seco:hover, .precios-mix-cervero:hover, .precios-mix-crocante:hover,
-.precios-pan-rallado:hover {
+.precios-pan-rallado:hover, .precios-mix-pan-rallado:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(255,215,0,0.25);
 }
