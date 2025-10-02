@@ -1,39 +1,41 @@
-@font-face {
+/* carga de fuente personalizada */
+@font-face { 
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
 
+/* estilos generales del body */
 body {
     margin: 0;
     padding: 0;
 }
-
 body {
-    background-color: #121212;
-    color: #f5f5f5;
+    background-color: #121212; /* fondo oscuro */
+    color: #f5f5f5; /* texto claro */
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* tipografía base */
+    line-height: 1.6; /* separación entre líneas */
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6;
-}
-
+/* header con logo, nav y login */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 header {
     padding: 15px 30px;
     border-bottom: 3px solid #FFD700;
     background-color: #000;
 }
-
-header .titulo {
-    flex: 1;
+header {
+    flex-wrap: wrap; /* acomoda en varias líneas si falta espacio */
+    font-family: 'custom-font';
 }
-
+header .titulo {
+    flex: 1; /* ocupa espacio flexible */
+}
 header .titulo h1 {
     margin: 0;
     color: #fff;
@@ -41,15 +43,15 @@ header .titulo h1 {
     font-weight: 700;
 }
 
+/* navegación y links de login */
 header nav ul, 
 header .log_in_sign_up ul {
-    list-style: none;
+    list-style: none; /* sin viñetas */
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0;
 }
-
 header nav a, 
 header .log_in_sign_up a {
     text-decoration: none;
@@ -58,66 +60,54 @@ header .log_in_sign_up a {
     font-weight: 600;
     padding: 6px 12px;
     border-radius: 8px;
+    position: relative;
+    transition: color .3s ease;
 }
-
 header ul li a:hover {
     color: yellow;
 }
 
-header {
-    flex-wrap: wrap;
-}
-
-header {
-    font-family: 'custom-font';
-}
-
+/* títulos */
 h2, h3 {
     text-align: center;
     color: #FFD700;
-}
-
-h2, h3 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-}
-
-h2, h3 {
+    margin: 20px 0 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
     text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.4);
 }
-
 h2 {
     font-size: 1.8rem;
 }
 
+/* sección principal */
 main {
     padding: 30px;
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: .05s; 
+    will-change: transform, opacity;
 }
 
-.bienvenida-condimentos {
-    background-color: #1c1c1c;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.bienvenida-frutos-secos {
-    background-color: #1c1c1c;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-}
-
+/* bloques de bienvenida */
+.bienvenida-condimentos,
+.bienvenida-frutos-secos,
 .bienvenida-pan_rayado {
     background-color: #1c1c1c;
     padding: 25px;
     border-radius: 12px;
     text-align: center;
+    transition: transform .3s ease, box-shadow .3s ease;
+    will-change: transform, box-shadow;
+}
+.bienvenida-condimentos:hover,
+.bienvenida-frutos-secos:hover,
+.bienvenida-pan_rayado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255,215,0,0.25);
 }
 
+/* catálogo de productos */
 .catalogo_row {
     display: flex;
     justify-content: center;
@@ -126,6 +116,7 @@ main {
     margin-bottom: 40px;
 }
 
+/* formulario */
 form {
     background-color: #111;
     border: 2px solid #FFD700;
@@ -133,24 +124,28 @@ form {
     padding: 20px;
     width: 260px;
     color: white;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
 }
-
+form:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(255,215,0,0.25);
+    border-color: #fdb813;
+}
 fieldset {
     border: 2px solid #FFD700;
     border-radius: 8px;
     padding: 15px;
 }
-
 legend {
     font-weight: bold;
     color: #FFD700;
 }
-
 label {
     display: block;
     margin: 10px 0 5px;
 }
 
+/* inputs */
 input[type="number"],
 select {
     width: 95%;
@@ -161,7 +156,13 @@ select {
     background-color: #222;
     color: white;
 }
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #fdb813;
+    outline-offset: 2px;
+    transition: outline-color .2s ease;
+}
 
+/* botones del formulario */
 input[type="submit"],
 input[type="reset"] {
     width: 98%;
@@ -171,231 +172,115 @@ input[type="reset"] {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
 }
-
 input[type="submit"] {
     background-color: #FFD700;
     color: #000;
 }
-
 input[type="reset"] {
     background-color: #333;
     color: #FFD700;
     border: 1px solid #FFD700;
 }
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255,215,0,0.25);
+}
 
+/* footer */
 footer {
     background-color: #1c1c1c;
     padding: 15px;
     text-align: center;
     border-top: 3px solid #fdb813;
+    transition: background-color 1.5s ease, box-shadow 1.5s ease;
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: .1s; 
+    will-change: transform, opacity;
 }
-
+footer:hover {
+    background-color: #000;
+    box-shadow: 0 -6px 20px rgba(255,215,0,0.3);
+}
 footer p {
     margin: 0;
     color: #fdb813;
     font-weight: bold;
 }
 
+/* animaciones */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* animaciones aplicadas */
+header .titulo h1 {
+    animation: fadeInUp 1.2s ease forwards;
+}
+nav { 
+    animation: fadeInUp 1.4s ease forwards;
+    animation-duration: 1.2s; 
+}
+.log_in_sign_up {
+    animation: fadeInUp 1.4s ease forwards;
+    animation-duration: 1.2s; 
+}
+.logo img { 
+    animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite; 
+    will-change: transform;
+}
+header .titulo h1:hover {
+  text-shadow: 0 0 8px rgba(255,215,0,.25);
+  transition: text-shadow .3s ease;
+}
+
+/* efecto subrayado animado en nav y login */
+header nav a::after, header .log_in_sign_up a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 4px;
+  width: 100%; height: 2px;
+  background: #FFD700;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s ease;
+  transition-timing-function: cubic-bezier(.2,.8,.2,1);
+}
+header nav a:hover::after, header .log_in_sign_up a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header nav a:hover, header .log_in_sign_up a:hover { 
+    color: #FFD700; 
+}
+header nav a:active, header .log_in_sign_up a:active { 
+    transform: translateY(1px); 
+}
+
+/* responsive para pantallas medianas */
 @media (max-width: 900px) {
     .catalogo_row {
         flex-direction: column;
         align-items: center;
     }
-
     form {
         width: 90%;
         max-width: 350px;
     }
 }
 
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes zoomIn {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-header .titulo h1 {
-     animation: fadeInUp 1.2s ease forwards;
-     }
-
-nav { 
-    animation: fadeInUp 1.4s ease forwards; 
-}
-
-.log_in_sign_up {
-     animation: fadeInUp 1.4s ease forwards; 
-    }
-
-main { 
-    animation: fadeInUp 1.5s ease forwards; 
-}
-
-footer { 
-    animation: fadeInUp 1.5s ease forwards; 
-}
-
-.logo img { 
-    animation: zoomIn 1s ease forwards;
- }
-
- .logo img { 
-    animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite; 
-}
-
-header nav a, header .log_in_sign_up a {
-  position: relative;
-  transition: color .3s ease;
-}
-
-header nav a::after, header .log_in_sign_up a::after {
-  content: "";
-  position: absolute;
-  left: 0; bottom: 4px;
-  width: 100%; height: 2px;
-  background: #FFD700;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .3s ease;
-}
-
-header nav a::after, header .log_in_sign_up a::after {
-  content: "";
-  position: absolute;
-  left: 0; bottom: 4px;
-  width: 100%; height: 2px;
-  background: #FFD700;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .3s ease;
-}
-
-header nav a:hover::after, header .log_in_sign_up a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-header nav a:hover, header .log_in_sign_up a:hover { color: #FFD700; }
-
-.bienvenida-condimentos,
-.bienvenida-frutos-secos,
-.bienvenida-pan_rayado {
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.bienvenida-condimentos:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255,215,0,0.25);
-}
-
-.bienvenida-frutos-secos:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255,215,0,0.25);
-}
-
-.bienvenida-pan_rayado:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255,215,0,0.25);
-}
-
-form {
-  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-}
-
-form:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(255,215,0,0.25);
-  border-color: #fdb813;
-}
-
-input[type="submit"], input[type="reset"] {
-  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
-}
-
-input[type="submit"]:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255,215,0,0.25);
-}
-
-input[type="reset"]:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255,215,0,0.25);
-}
-
-footer {
-  transition: background-color 1.5s ease, box-shadow 1.5s ease;
-}
-
-footer:hover {
-  background-color: #000;
-  box-shadow: 0 -6px 20px rgba(255,215,0,0.3);
-}
-
-header nav a, header .log_in_sign_up a { 
-  transition-duration: .25s; 
-}
-
-header nav a::after, header .log_in_sign_up a::after {
-  transition-timing-function: cubic-bezier(.2,.8,.2,1);
-}
-
-main { 
-  animation-delay: .05s; 
-}
-
-footer { 
-  animation-delay: .1s; 
-}
-
-nav { 
-  animation-duration: 1.2s; 
-}
-
-.log_in_sign_up { 
-  animation-duration: 1.2s; 
-}
-
-header .titulo h1:hover {
-  text-shadow: 0 0 8px rgba(255,215,0,.25);
-  transition: text-shadow .3s ease;
-}
-
-input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #fdb813;
-  outline-offset: 2px;
-  transition: outline-color .2s ease;
-}
-
-.logo img { 
-  will-change: transform; 
-}
-
-.bienvenida-condimentos,
-.bienvenida-frutos-secos,
-.bienvenida-pan_rayado { 
-  will-change: transform, box-shadow; 
-}
-
-main, footer { 
-  will-change: transform, opacity; 
-}
-
-header nav a:active, header .log_in_sign_up a:active { 
-  transform: translateY(1px); 
-}
-
+/* accesibilidad: reduce movimiento si el usuario lo configuró */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
-
-
-
