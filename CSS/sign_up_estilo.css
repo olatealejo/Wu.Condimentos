@@ -2,22 +2,25 @@
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
-/* ======== RESET GENERAL ======== */
+
+/* reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* ===== BODY ===== */
+
+/* estilos del body */
 body {
     background-color: #121212;
     color: #f5f5f5;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* ======== HEADER ======== */
+
+/* header */
 header {
     display: flex;
     align-items: center;
@@ -61,7 +64,8 @@ header nav a {
 header nav a:hover {
     color: yellow;
 }
-/* ======== MAIN ======== */
+
+/* main */
 main {
     max-width: 600px;
     margin: 40px auto;
@@ -71,7 +75,8 @@ main {
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
     color: #FFD700;
 }
-/* ======== FORMULARIO ======== */
+
+/* formulario */
 form {
     background-color: #111;
     border: 2px solid #FFD700;
@@ -92,7 +97,6 @@ legend {
     color: #FFD700;
     margin-bottom: 15px;
     text-align: center;
-   
 }
 
 label {
@@ -101,6 +105,7 @@ label {
     font-weight: 600;
     color: #FFD700;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -127,7 +132,8 @@ select:focus {
     background-color: #000;
     color: #FFD700;
 }
-/* ======== BOTONES ======== */
+
+/* botones */
 .botones {
     display: flex;
     justify-content: space-between;
@@ -149,7 +155,8 @@ button:hover {
     background-color: #FFD700;
     color: #000;
 }
-/* ======== LOGIN TEXTO ABAJO ======== */
+
+/* texto debajo de login */
 .login {
     text-align: center;
     margin-top: 20px;
@@ -164,7 +171,8 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
-/* ======== FOOTER ======== */
+
+/* footer */
 footer {
     background-color: #000;
     color: #FFD700;
@@ -173,28 +181,18 @@ footer {
     border-top: 3px solid #FFD700;
     margin-top: 50px;
 }
-/* ===== Animaciones base para header ===== */
+
+/* animaciones base */
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 @keyframes zoomIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
 }
-/* ===== Animaciones de entrada para header ===== */
+
+/* animaciones de entrada en header */
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
@@ -202,25 +200,20 @@ footer {
     animation: fadeInUp 1.2s ease forwards;
 }
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-6px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
 }
-
 .logo img {
     animation: float 4s ease-in-out infinite;
 }
-/* ===== Animaciones para main y formulario ===== */
+
+/* animaciones en main y formulario */
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
     position: relative;
     z-index: 1;
 }
-
 main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
@@ -246,14 +239,14 @@ select:focus {
 button {
     transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-
 button:hover {
     transform: scale(1.05);
     background-color: #FFD700;
     color: #000;
     box-shadow: 0 0 10px #FFD700;
 }
-/* ===== Enlace con subrayado animado ===== */
+
+/* enlace con subrayado animado */
 .login a {
     position: relative;
     transition: color 0.3s;
@@ -271,18 +264,19 @@ button:hover {
 .login a:hover::after {
     width: 100%;
 }
-/* ===== Animación para Nav ===== */
+
+/* animación en nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
-/* ===== Efecto subrayado animado para enlaces del nav ===== */
+
+/* enlaces nav con subrayado animado */
 header nav a {
     position: relative;
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 header nav a::after {
     content: "";
     position: absolute;
@@ -293,35 +287,34 @@ header nav a::after {
     background-color: #FFD700;
     transition: width 0.3s ease;
 }
-
 header nav a:hover {
     color: #FFD700; 
 }
-
 header nav a:hover::after {
     width: 100%;
 }
 
-/* ===== Animación para el footer ===== */
+/* animación en footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
 }
-/* ===== MEDIA QUERY PARA TABLETS Y MÓVILES ===== */
+
+/* responsive: tablets y móviles */
 @media (max-width: 768px) {
-     main {
+    main {
         margin: 20px 10px;
         padding: 15px;
         max-width: 100%; 
     }
-     form {
+    form {
         padding: 20px;
     }
-     header {
+    header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-     header nav a {
+    header nav a {
         font-size: 22px; 
     }
     header nav ul {
@@ -333,11 +326,11 @@ footer {
         text-align: center;
         width: 100%;
     }
-     button {
+    button {
         width: 100%;
         margin-top: 10px;
     }
-     .botones {
+    .botones {
         flex-direction: column;
         gap: 10px;
     }
