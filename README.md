@@ -35,4 +35,12 @@ log_in_estilo.css: Ana Vera <br>
 sign_up_estilo.css: Ana Vera <br>
 catalogo_estilo.css: Alejo Olate y Gino Forneron <br>
 <br>
+TP6: <br>
+En este trabajo que se trataba sobre los movimientos del sitio web, usamos principalmente atributos como el rgb, @keyframes, media, transform, transition, animation, hover, etc. <br>
+
+
+
+
+
+
 
