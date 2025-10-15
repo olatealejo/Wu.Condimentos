@@ -586,3 +586,7 @@ footer {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+/*diseño de boton de cambio de tema*/
+.boton-tema{
+ position: fixed;
+}
