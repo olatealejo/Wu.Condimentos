@@ -586,7 +586,7 @@ footer {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
-/*diseño de boton de cambio de tema*/
+/*!!diseño de boton de cambio de tema!!*/
 .boton-tema{
  position: fixed;
   top: 20px;
@@ -598,4 +598,8 @@ footer {
   font-weight: 600;
   background-color: #222;
   color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+  z-index: 999;
 }
