@@ -603,3 +603,7 @@ footer {
   transition: all 0.4s ease;
   z-index: 999;
 }
+.boton-tema:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
