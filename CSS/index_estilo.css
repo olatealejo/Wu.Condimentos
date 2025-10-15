@@ -593,8 +593,9 @@ footer {
   right: 20px;
   padding: 10px 18px;
   border: none;
-  border-radius: 25px
+  border-radius: 25px;
   font-size: 1rem;
   font-weight: 600;
-
+  background-color: #222;
+  color: #fff;
 }
