@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     botonTema.textContent = "🌙 Modo oscuro";
 }
 botonTema.addEventListener("click", () => {
-    
+    body.classList.toggle("modo-claro");
 });
 });
