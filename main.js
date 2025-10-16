@@ -9,5 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 botonTema.addEventListener("click", () => {
     body.classList.toggle("modo-claro");
+
+    if (body.classList.contains("modo-claro")) {
+  botonTema.textContent = "🌙 Modo oscuro";
+  localStorage.setItem("tema", "claro");
+} else {
+  botonTema.textContent = "☀ Modo claro";
+  localStorage.setItem("tema", "oscuro");
+}
+
 });
 });
