@@ -659,3 +659,8 @@ body.modo-claro .boton-tema {
   text-align: center;
   margin: 40px 0 10px;
 }
+
+.boton-contactos {
+  background-color: #e6a500;
+  color: #fff;
+}
