@@ -626,3 +626,13 @@ body.modo-claro footer {
   color: #222;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
+body.modo-claro .bienvenida{
+  background-color: #fff8e5;
+  color: #222;
+  border: 2px solid #222;
+}
+
+body.modo-claro .bienvenida p{
+  color: #222;
+}
