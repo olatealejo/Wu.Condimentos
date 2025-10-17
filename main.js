@@ -28,3 +28,14 @@ const seccionContactos = document.getElementById("contactos");
 
 // Ocultamos los contactos al inicio
 seccionContactos.classList.add("oculto");
+
+botonContactos.addEventListener("click", () => {
+  seccionContactos.classList.toggle("oculto");
+
+  if (seccionContactos.classList.contains("oculto")) {
+    botonContactos.textContent = "📞 Mostrar contactos";
+  } else {
+    botonContactos.textContent = "❌ Ocultar contactos";
+  }
+
+});
