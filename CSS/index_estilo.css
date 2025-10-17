@@ -612,3 +612,10 @@ body.modo-claro {
   background-color: #ffffff;
   color: #121212;
 }
+
+body.modo-claro header,
+body.modo-claro footer {
+  background-color: #fff8e5;
+  color: #222;
+  border-bottom: 2px solid #222;
+}
