@@ -676,3 +676,9 @@ body.modo-claro .boton-tema {
   transform: scale(1.05);
 }
 
+/* Transición suave de la sección */
+.contactos {
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  overflow: hidden;
+}
+
