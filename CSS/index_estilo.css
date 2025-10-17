@@ -665,4 +665,6 @@ body.modo-claro .boton-tema {
   color: #fff;
   border: none;
   border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
