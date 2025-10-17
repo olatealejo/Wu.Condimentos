@@ -606,4 +606,9 @@ footer {
 .boton-tema:hover {
   transform: scale(1.07);
   box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+} 
+/* Colores para el modo Modo claro  */
+body.modo-claro {
+  background-color: #ffffff;
+  color: #121212;
 }
