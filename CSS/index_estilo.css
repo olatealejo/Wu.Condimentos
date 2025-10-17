@@ -636,3 +636,14 @@ body.modo-claro .bienvenida{
 body.modo-claro .bienvenida p{
   color: #222;
 }
+
+body.modo-claro h1{
+    color: #222;
+}
+body.modo-claro a {
+  color: #222;
+}
+
+body.modo-claro a:hover {
+  color: #fdb813;
+}
