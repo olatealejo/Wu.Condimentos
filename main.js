@@ -20,3 +20,5 @@ botonTema.addEventListener("click", () => {
 
 });
 });
+const botonContactos = document.getElementById("boton-contactos");
+const seccionContactos = document.getElementById("contactos");
