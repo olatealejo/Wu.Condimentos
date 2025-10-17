@@ -619,3 +619,10 @@ body.modo-claro footer {
   color: #222;
   border-bottom: 2px solid #222;
 }
+
+  body.modo-claro .productos, body.modo-claro .contactos, body.modo-claro .lista-precios-1, body.modo-claro .lista-precios-2
+  , body.modo-claro .precios-mix-cervero , body.modo-claro .precios-mix-crocante,  body.modo-claro .precios-mix-seco,  body.modo-claro .precios-pan-rallado{
+  background-color: #fff8e5;
+  color: #222;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
