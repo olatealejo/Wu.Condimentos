@@ -653,3 +653,9 @@ body.modo-claro .boton-tema {
   color: #222;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
+/* Boton de ocultar y aparecer seccion de contactos*/
+.contenedor-contactos-boton {
+  text-align: center;
+  margin: 40px 0 10px;
+}

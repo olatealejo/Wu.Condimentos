@@ -33,9 +33,9 @@ botonContactos.addEventListener("click", () => {
   seccionContactos.classList.toggle("oculto");
 
   if (seccionContactos.classList.contains("oculto")) {
-    botonContactos.textContent = "📞 Mostrar contactos";
+    botonContactos.textContent = "Mostrar contactos";
   } else {
-    botonContactos.textContent = "❌ Ocultar contactos";
+    botonContactos.textContent = "Ocultar contactos";
   }
 
 });
