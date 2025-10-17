@@ -669,5 +669,10 @@ body.modo-claro .boton-tema {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-
 }
+
+.boton-contactos:hover {
+  background-color: #cc8b00;
+  transform: scale(1.05);
+}
+
