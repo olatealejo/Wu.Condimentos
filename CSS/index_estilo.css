@@ -663,4 +663,6 @@ body.modo-claro .boton-tema {
 .boton-contactos {
   background-color: #e6a500;
   color: #fff;
+  border: none;
+  border-radius: 12px;
 }
