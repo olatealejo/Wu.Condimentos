@@ -382,3 +382,8 @@ body.modo-claro a {
 body.modo-claro a:hover {
     color: #fdb813;
 }
+/* Personalizando botón de tema en modo claro con fondo dorado */
+body.modo-claro #boton-tema {
+    background-color: #fdb813;
+    color: #222;
+}
