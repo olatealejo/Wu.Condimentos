@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
       passwordInput.focus();
     }
   });
+  modalCerrar.addEventListener("click", () => {
+    modal.classList.add("oculto");
+  });
 
 /*script para ocultar aparecer la sección de */
 
