@@ -22,7 +22,8 @@ botonTema.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-
+  const form = document.querySelector("form");
+  const passwordInput = document.getElementById("cont")
 
 /*script para ocultar aparecer la sección de */
 
