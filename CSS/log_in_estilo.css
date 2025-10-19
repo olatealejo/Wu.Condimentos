@@ -483,3 +483,10 @@ body.modo-claro input[type="email"]::placeholder,
 body.modo-claro input[type="password"]::placeholder {
     color: #888;
 }
+/* Estilo para inputs en foco con fondo más claro */
+body.modo-claro input:focus {
+    border-color: #fdb813;
+    background-color: #fff9ec;
+    outline: none;
+    color: #000;
+}
