@@ -21,6 +21,9 @@ botonTema.addEventListener("click", () => {
 });
 });
 
+
+
+
 /*script para ocultar aparecer la sección de */
 
 const botonContactos = document.getElementById("boton-contactos");
