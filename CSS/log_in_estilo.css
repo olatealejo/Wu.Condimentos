@@ -490,3 +490,15 @@ body.modo-claro input:focus {
     outline: none;
     color: #000;
 }
+/* Estilizar botones dentro de formulario en modo claro */
+body.modo-claro button {
+    background-color: #fdb813;
+    color: #222;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
