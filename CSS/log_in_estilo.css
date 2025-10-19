@@ -511,3 +511,7 @@ body.modo-claro button:hover {
 body.modo-claro .login a {
     color: #050505;
 }
+/* Hover sobre enlaces de login */
+body.modo-claro .login a:hover {
+    text-decoration: underline;
+}
