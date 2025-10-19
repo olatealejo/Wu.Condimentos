@@ -519,3 +519,7 @@ body.modo-claro .login a:hover {
 body.modo-claro .login a::after {
     background-color: #000;
 }
+/* Ajustar color en hover de login a negro */
+body.modo-claro .login a:hover {
+    color: #000;
+}
