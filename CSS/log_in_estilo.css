@@ -405,3 +405,10 @@ body.modo-claro footer {
 body.modo-claro footer {
     border-top: 2px solid #222;
 }
+/* Cambiar color de títulos y quitar sombra en modo claro */
+body.modo-claro h1,
+body.modo-claro h2,
+body.modo-claro h3 {
+    color: #222;
+    text-shadow: none;
+}
