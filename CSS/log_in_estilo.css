@@ -426,3 +426,16 @@ body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
 }
+/* Consolidar propiedades duplicadas del botón de tema */
+body.modo-claro #boton-tema {
+    background-color: #fdb813;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
