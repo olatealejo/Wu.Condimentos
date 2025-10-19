@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal-error");
   const modalMensaje = document.getElementById("modal-mensaje");
   const modalCerrar = document.getElementById("modal-cerrar");
+  form.addEventListener("submit", (e) => {
+    const password = passwordInput.value;
 
 /*script para ocultar aparecer la sección de */
 
