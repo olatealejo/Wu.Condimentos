@@ -42,6 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
   modalCerrar.addEventListener("click", () => {
     modal.classList.add("oculto");
   });
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("oculto");
+    }
+  });
+
+}); 
 
 /*script para ocultar aparecer la sección de */
 
