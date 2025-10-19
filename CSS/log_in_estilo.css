@@ -401,3 +401,7 @@ body.modo-claro footer {
     color: #121212;
     border-bottom: 2px solid #222;
 }
+/* Agregar borde superior al footer para separación visual */
+body.modo-claro footer {
+    border-top: 2px solid #222;
+}
