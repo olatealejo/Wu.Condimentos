@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       modalMensaje.textContent = "La contraseña debe contener al menos una letra mayúscula, un número y no debe contener símbolos.";
       modal.classList.remove("oculto");
+      passwordInput.focus();
+    }
+  });
 
 /*script para ocultar aparecer la sección de */
 
