@@ -468,3 +468,7 @@ body.modo-claro button:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
+/* Personalizando enlaces de login en modo claro */
+body.modo-claro .login a {
+    color: #050505;
+}
