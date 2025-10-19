@@ -412,3 +412,8 @@ body.modo-claro h3 {
     color: #222;
     text-shadow: none;
 }
+/* Aplicar color oscuro a enlaces en modo claro */
+body.modo-claro a {
+    color: #222;
+    text-decoration: none;
+}
