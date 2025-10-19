@@ -437,3 +437,8 @@ body.modo-claro textarea {
     font-size: 1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+/* Cambiando color de placeholder a gris claro */
+body.modo-claro input::placeholder,
+body.modo-claro textarea::placeholder {
+    color: #888;
+}
