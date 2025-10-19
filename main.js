@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalCerrar = document.getElementById("modal-cerrar");
   form.addEventListener("submit", (e) => {
     const password = passwordInput.value;
+    const tieneMayuscula = /[A-Z]/.test(password);
+    const tieneNumero = /[0-9]/.test(password);
+    const tieneSimbolos = /[^a-zA-Z0-9]/.test(password);
 
 /*script para ocultar aparecer la sección de */
 
