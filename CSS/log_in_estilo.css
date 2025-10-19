@@ -444,3 +444,16 @@ body.modo-claro #boton-tema:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
+/* Estilizar contenedor <main> en modo claro con fondo animado */
+body.modo-claro main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #121212;
+    background: linear-gradient(270deg, #fdb813, #fffdf6, #f9f4e6);
+    background-size: 600% 600%;
+    animation: gradient-lightmode 10s ease infinite, fadeInUp 1.5s ease forwards;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
