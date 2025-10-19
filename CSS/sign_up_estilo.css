@@ -335,3 +335,15 @@ footer {
         gap: 10px;
     }
 }
+/* Estilo base para el botón de tema: forma redonda igual en todos los modos */
+#boton-tema {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    font-size: 1rem;
+}
