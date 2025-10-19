@@ -394,3 +394,10 @@ body.modo-claro {
     color: #121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* Aplicar fondo claro en header y footer en modo claro */
+body.modo-claro header,
+body.modo-claro footer {
+    background-color: #fff8e5;
+    color: #121212;
+    border-bottom: 2px solid #222;
+}
