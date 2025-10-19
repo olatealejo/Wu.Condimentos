@@ -442,3 +442,12 @@ body.modo-claro input::placeholder,
 body.modo-claro textarea::placeholder {
     color: #888;
 }
+/* Estilo para inputs, selects y textareas en foco con fondo más claro */
+body.modo-claro input:focus,
+body.modo-claro select:focus,
+body.modo-claro textarea:focus {
+    border-color: #fdb813;
+    background-color: #fff9ec;
+    outline: none;
+    color: #000;
+}
