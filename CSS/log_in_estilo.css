@@ -559,3 +559,11 @@ body.modo-claro main:hover {
     text-align: center;
     font-family: Arial, sans-serif;
   }
+  .modal-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
