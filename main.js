@@ -24,6 +24,9 @@ botonTema.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   const passwordInput = document.getElementById("cont")
+  const modal = document.getElementById("modal-error");
+  const modalMensaje = document.getElementById("modal-mensaje");
+  const modalCerrar = document.getElementById("modal-cerrar");
 
 /*script para ocultar aparecer la sección de */
 
