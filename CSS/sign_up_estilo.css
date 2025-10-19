@@ -347,3 +347,10 @@ footer {
     margin-left: 20px;
     font-size: 1rem;
 }
+
+/* Establecer color de fondo claro y color de texto oscuro en modo claro */
+body.modo-claro {
+    background-color: #fdf6e3;
+    color: #121212;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
