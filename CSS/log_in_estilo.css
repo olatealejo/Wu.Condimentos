@@ -370,3 +370,16 @@ footer {
         gap: 10px;
     }
 }
+/* Agregar estilos base al botón #boton-tema (padding, color, bordes) */
+#boton-tema {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #000;
+    color: #FFD700;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
