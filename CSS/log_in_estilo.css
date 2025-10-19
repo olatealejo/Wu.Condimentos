@@ -502,3 +502,8 @@ body.modo-claro button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Hover en botones modo claro con efecto de escala */
+body.modo-claro button:hover {
+    background-color: #ffcc33;
+    transform: scale(1.05);
+}
