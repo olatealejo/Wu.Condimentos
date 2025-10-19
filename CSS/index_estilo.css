@@ -588,8 +588,8 @@ footer {
   }
 /*!!diseño de boton de cambio de tema!!*/
 .boton-tema{
- position: fixed;
-  top: 20px;
+  position: fixed;
+  top: 90px;
   right: 20px;
   padding: 10px 18px;
   border: none;
