@@ -515,3 +515,7 @@ body.modo-claro .login a {
 body.modo-claro .login a:hover {
     text-decoration: underline;
 }
+/* Subrayado animado en enlaces de login en modo claro */
+body.modo-claro .login a::after {
+    background-color: #000;
+}
