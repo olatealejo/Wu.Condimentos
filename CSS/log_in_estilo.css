@@ -523,3 +523,15 @@ body.modo-claro .login a::after {
 body.modo-claro .login a:hover {
     color: #000;
 }
+/* Animación RGB para fondo del contenedor main */
+@keyframes gradient-lightmode {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
