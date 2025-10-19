@@ -451,3 +451,6 @@ body.modo-claro .login a::after {
     font-weight: bold;
     cursor: pointer;
   }
+  .oculto {
+    display: none;
+  }
