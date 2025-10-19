@@ -471,3 +471,10 @@ body.modo-claro legend,
 body.modo-claro label {
     color: #222;
 }
+/* Personalizar inputs con fondo claro y bordes grises */
+body.modo-claro input[type="email"],
+body.modo-claro input[type="password"] {
+    background-color: #fffef9;
+    border: 2px solid #ccc;
+    color: #222;
+}
