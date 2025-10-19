@@ -417,3 +417,7 @@ body.modo-claro a {
     color: #222;
     text-decoration: none;
 }
+/* Establecer hover dorado suave en enlaces modo claro */
+body.modo-claro a:hover {
+    color: #fdb813;
+}
