@@ -21,7 +21,7 @@ botonTema.addEventListener("click", () => {
 });
 });
 
-
+document.addEventListener("DOMContentLoaded", () => {
 
 
 /*script para ocultar aparecer la sección de */
