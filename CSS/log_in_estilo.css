@@ -388,3 +388,9 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 0 10px #FFD700;
 }
+/* Establecer color de fondo claro y color de texto oscuro en modo claro */
+body.modo-claro {
+    background-color: #fdf6e3;
+    color: #121212;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
