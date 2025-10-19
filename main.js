@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tieneSimbolos = /[^a-zA-Z0-9]/.test(password);
     if (!tieneMayuscula || !tieneNumero || tieneSimbolos) {
       e.preventDefault();
+      modalMensaje.textContent = "La contraseña debe contener al menos una letra mayúscula, un número y no debe contener símbolos.";
+
 
 /*script para ocultar aparecer la sección de */
 
