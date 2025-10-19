@@ -387,3 +387,8 @@ body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
 }
+/* Aplicar efecto hover al botón en modo claro */
+body.modo-claro #boton-tema:hover {
+    background-color: #ffcc33;
+    transform: scale(1.05);
+}
