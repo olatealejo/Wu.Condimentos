@@ -335,7 +335,6 @@ footer {
         gap: 10px;
     }
 }
-/* Estilo base para el botón de tema: forma redonda igual en todos los modos */
 #boton-tema {
     border-radius: 25px;
     padding: 10px 20px;
@@ -347,52 +346,41 @@ footer {
     margin-left: 20px;
     font-size: 1rem;
 }
-
-/* Establecer color de fondo claro y color de texto oscuro en modo claro */
 body.modo-claro {
     background-color: #fdf6e3;
     color: #121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* Aplicar fondo claro en header y footer en modo claro */
 body.modo-claro header,
 body.modo-claro footer {
     background-color: #fff8e5;
     color: #121212;
     border-bottom: 2px solid #222;
 }
-/* Agregar borde superior al footer para separación visual */
 body.modo-claro footer {
     border-top: 2px solid #222;
 }
-/* Cambiando color de títulos y quitar sombra en modo claro */
 body.modo-claro h1,
 body.modo-claro h2,
 body.modo-claro h3 {
     color: #222;
     text-shadow: none;
 }
-/* Aplicar color oscuro a enlaces en modo claro */
 body.modo-claro a {
     color: #222;
     text-decoration: none;
 }
-/* Establecer hover dorado suave en enlaces modo claro */
 body.modo-claro a:hover {
     color: #fdb813;
 }
-/* Personalizando botón de tema en modo claro con fondo dorado */
 body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
 }
-/* Aplicar efecto hover al botón en modo claro */
 body.modo-claro #boton-tema:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
-/* Estilizar contenedor <main> en modo claro con fondo animado */
 body.modo-claro main {
     max-width: 600px;
     margin: 40px auto;
@@ -405,12 +393,10 @@ body.modo-claro main {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* Hover en contenedor main para efecto flotante */
 body.modo-claro main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
-/* Estilizar formulario en modo claro con degradado suave */
 body.modo-claro form {
     background: linear-gradient(to bottom, #fef7e5, #fff4cc);
     border: 2px solid #fdb813;
@@ -419,12 +405,10 @@ body.modo-claro form {
     padding: 30px;
     box-shadow: 0 10px 20px rgba(253, 184, 19, 0.15);
 }
-/* Aplicar color oscuro a leyendas y etiquetas */
 body.modo-claro legend,
 body.modo-claro label {
     color: #222;
 }
-/* Personalizar inputs, selects y textareas con fondo claro y bordes grises */
 body.modo-claro input,
 body.modo-claro select,
 body.modo-claro textarea {
@@ -437,12 +421,10 @@ body.modo-claro textarea {
     font-size: 1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
-/* Cambiando color de placeholder a gris claro */
 body.modo-claro input::placeholder,
 body.modo-claro textarea::placeholder {
     color: #888;
 }
-/* Estilo para inputs, selects y textareas en foco con fondo más claro */
 body.modo-claro input:focus,
 body.modo-claro select:focus,
 body.modo-claro textarea:focus {
@@ -451,7 +433,6 @@ body.modo-claro textarea:focus {
     outline: none;
     color: #000;
 }
-/* Estilizando botones dentro de formulario en modo claro */
 body.modo-claro button {
     background-color: #fdb813;
     color: #222;
@@ -463,25 +444,20 @@ body.modo-claro button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Agregando hover en botones modo claro con efecto de escala */
 body.modo-claro button:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
-/* Personalizando enlaces de login en modo claro */
 body.modo-claro .login a {
     color: #050505;
 }
-/*Agregando hover sobre enlaces de login */
 body.modo-claro .login a:hover {
     text-decoration: underline;
     color: #000;
 }
-/*Agregando subrayado animado en enlaces de login en modo claro */
 body.modo-claro .login a::after {
     background-color: #000;
 }
-/*Agregando animación RGB para fondo del contenedor main */
 @keyframes gradient-lightmode {
     0% {
         background-position: 0% 50%;
