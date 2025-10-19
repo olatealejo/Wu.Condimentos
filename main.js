@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tieneMayuscula = /[A-Z]/.test(password);
     const tieneNumero = /[0-9]/.test(password);
     const tieneSimbolos = /[^a-zA-Z0-9]/.test(password);
+    if (!tieneMayuscula || !tieneNumero || tieneSimbolos) {
+      e.preventDefault();
 
 /*script para ocultar aparecer la sección de */
 
