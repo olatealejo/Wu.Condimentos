@@ -466,3 +466,8 @@ body.modo-claro form {
     padding: 30px;
     box-shadow: 0 10px 20px rgba(253, 184, 19, 0.15);
 }
+/* Aplicar color oscuro a leyendas y etiquetas */
+body.modo-claro legend,
+body.modo-claro label {
+    color: #222;
+}
