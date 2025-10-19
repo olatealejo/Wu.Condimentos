@@ -567,3 +567,6 @@ body.modo-claro main:hover {
     font-weight: bold;
     cursor: pointer;
   }
+  .oculto {
+    display: none;
+  }
