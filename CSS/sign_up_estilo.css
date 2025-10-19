@@ -2,15 +2,11 @@
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
-
-/* reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* estilos del body */
 body {
     background-color: #121212;
     color: #f5f5f5;
@@ -19,8 +15,6 @@ body {
     line-height: 1.6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* header */
 header {
     display: flex;
     align-items: center;
@@ -31,11 +25,9 @@ header {
     flex-wrap: wrap;
     font-family: 'custom-font';
 }
-
 header .titulo {
     flex: 1;
 }
-
 header .titulo h1 {
     margin: 0;
     color: #fff;
@@ -43,7 +35,6 @@ header .titulo h1 {
     font-weight: 700;
     font-family: 'custom-font', sans-serif;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
@@ -51,7 +42,6 @@ header nav ul {
     margin: 0;
     padding: 0;
 }
-
 header nav a {
     text-decoration: none;
     color: #fff;
@@ -60,12 +50,9 @@ header nav a {
     padding: 6px 12px;
     border-radius: 8px;
 }
-
 header nav a:hover {
     color: yellow;
 }
-
-/* main */
 main {
     max-width: 600px;
     margin: 40px auto;
@@ -75,8 +62,6 @@ main {
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
     color: #FFD700;
 }
-
-/* formulario */
 form {
     background-color: #111;
     border: 2px solid #FFD700;
@@ -85,12 +70,10 @@ form {
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     color: #FFD700;
 }
-
 fieldset {
     border: none;
     margin-bottom: 20px;
 }
-
 legend {
     font-size: 1.5rem;
     font-weight: bold;
@@ -98,14 +81,12 @@ legend {
     margin-bottom: 15px;
     text-align: center;
 }
-
 label {
     display: block;
     margin-top: 15px;
     font-weight: 600;
     color: #FFD700;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -120,11 +101,9 @@ select {
     font-size: 1rem;
     transition: border 0.3s, background-color 0.3s, color 0.3s;
 }
-
 input::placeholder {
     color: #bbb;
 }
-
 input:focus,
 select:focus {
     border-color: #FFD700;
@@ -132,14 +111,11 @@ select:focus {
     background-color: #000;
     color: #FFD700;
 }
-
-/* botones */
 .botones {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
 }
-
 button {
     padding: 10px 20px;
     background-color: #000;
@@ -150,13 +126,10 @@ button {
     font-weight: 600;
     transition: background-color 0.3s, color 0.3s;
 }
-
 button:hover {
     background-color: #FFD700;
     color: #000;
 }
-
-/* texto debajo de login */
 .login {
     text-align: center;
     margin-top: 20px;
@@ -171,8 +144,6 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
-
-/* footer */
 footer {
     background-color: #000;
     color: #FFD700;
@@ -181,8 +152,6 @@ footer {
     border-top: 3px solid #FFD700;
     margin-top: 50px;
 }
-
-/* animaciones base */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -191,8 +160,6 @@ footer {
     0% { opacity: 0; transform: scale(0.8); }
     100% { opacity: 1; transform: scale(1); }
 }
-
-/* animaciones de entrada en header */
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
@@ -206,8 +173,6 @@ footer {
 .logo img {
     animation: float 4s ease-in-out infinite;
 }
-
-/* animaciones en main y formulario */
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
@@ -245,8 +210,6 @@ button:hover {
     color: #000;
     box-shadow: 0 0 10px #FFD700;
 }
-
-/* enlace con subrayado animado */
 .login a {
     position: relative;
     transition: color 0.3s;
@@ -264,13 +227,9 @@ button:hover {
 .login a:hover::after {
     width: 100%;
 }
-
-/* animación en nav */
 nav {
     animation: fadeInUp 1.4s ease forwards;
 }
-
-/* enlaces nav con subrayado animado */
 header nav a {
     position: relative;
     color: #fff;
@@ -293,13 +252,9 @@ header nav a:hover {
 header nav a:hover::after {
     width: 100%;
 }
-
-/* animación en footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
 }
-
-/* responsive: tablets y móviles */
 @media (max-width: 768px) {
     main {
         margin: 20px 10px;
