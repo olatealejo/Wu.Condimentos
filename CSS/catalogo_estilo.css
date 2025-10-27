@@ -286,5 +286,6 @@ header nav a:active, header .log_in_sign_up a:active {
 }
 
 .carrito-icono {
+     cursor: pointer;
       position: relative;
 }
