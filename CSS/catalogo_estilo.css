@@ -384,3 +384,11 @@ body.modo-claro form {
     border-color: #222;
     color: #222;
 }
+
+body.modo-claro fieldset {
+    border-color: #222;
+}
+
+body.modo-claro legend {
+    color: #8B5A00;
+}
