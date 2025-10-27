@@ -289,4 +289,5 @@ header nav a:active, header .log_in_sign_up a:active {
      cursor: pointer;
      position: relative;
      font-size: 24px;
+     margin-left: 20px;
 }
