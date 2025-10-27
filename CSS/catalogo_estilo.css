@@ -210,6 +210,9 @@ footer p {
     font-weight: bold;
 }
 
+.footer {
+    display: flex;
+}
 /* animaciones */
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(20px); }
@@ -314,3 +317,5 @@ header nav a:active, header .log_in_sign_up a:active {
     font-weight: bold;
     line-height: 1;
 }
+
+
