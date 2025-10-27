@@ -370,3 +370,11 @@ body.modo-claro h3 {
     color: #8B5A00;
     text-shadow: 1px 1px 3px rgba(139, 90, 0, 0.2);
 }
+
+body.modo-claro .bienvenida-condimentos,
+body.modo-claro .bienvenida-frutos-secos,
+body.modo-claro .bienvenida-pan_rayado {
+    background-color: #fff8e5;
+    color: #222;
+    border: 2px solid #222;
+}
