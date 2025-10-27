@@ -345,3 +345,8 @@ body.modo-claro {
     background-color: #fdf6e3;
     color: #121212;
 }
+
+body.modo-claro header {
+    background-color: #fff8e5;
+    border-bottom-color: #222;
+}
