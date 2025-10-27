@@ -359,3 +359,8 @@ body.modo-claro header nav a,
 body.modo-claro header .log_in_sign_up a {
     color: #222;
 }
+
+body.modo-claro header nav a:hover,
+body.modo-claro header .log_in_sign_up a:hover {
+    color: #fdb813;
+}
