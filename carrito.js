@@ -36,3 +36,8 @@ if (cantidad > 0) {
     }
 
     alert(`Se añadieron ${cantidad} producto(s) al carrito. Total: ${carritoContador}`);
+
+     formulario.reset();
+} else {
+    alert("Por favor, selecciona una cantidad mayor a 0");
+}
