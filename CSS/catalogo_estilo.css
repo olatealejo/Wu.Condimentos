@@ -392,3 +392,10 @@ body.modo-claro fieldset {
 body.modo-claro legend {
     color: #8B5A00;
 }
+
+body.modo-claro input[type="number"],
+body.modo-claro select {
+    background-color: #fff;
+    color: #222;
+    border-color: #8B5A00;
+}
