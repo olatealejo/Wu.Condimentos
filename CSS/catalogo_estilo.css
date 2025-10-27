@@ -410,3 +410,8 @@ body.modo-claro input[type="reset"] {
     color: #8B5A00;
     border-color: #8B5A00;
 }
+
+body.modo-claro footer {
+    background-color: #fff8e5;
+    border-top-color: #222;
+}
