@@ -425,3 +425,8 @@ body.modo-claro .boton-tema {
     color: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
+
+body.modo-claro .boton-tema:hover {
+    background-color: #A06B00;
+    box-shadow: 0 6px 16px rgba(139,90,0,0.4);
+}
