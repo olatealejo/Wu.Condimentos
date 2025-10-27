@@ -350,3 +350,7 @@ body.modo-claro header {
     background-color: #fff8e5;
     border-bottom-color: #222;
 }
+
+body.modo-claro header .titulo h1 {
+    color: #222;
+}
