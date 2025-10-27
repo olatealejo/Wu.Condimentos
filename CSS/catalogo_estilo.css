@@ -419,3 +419,9 @@ body.modo-claro footer {
 body.modo-claro footer p {
     color: #8B5A00;
 }
+
+body.modo-claro .boton-tema {
+    background-color: #8B5A00;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
