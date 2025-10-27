@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal-error");
   const modalMensaje = document.getElementById("modal-mensaje");
   const modalCerrar = document.getElementById("modal-cerrar");
+  if (!form || !passwordInput || !modal || !modalMensaje || !modalCerrar) return;
   form.addEventListener("submit", (e) => {
     const password = passwordInput.value;
     const tieneMayuscula = /[A-Z]/.test(password);
