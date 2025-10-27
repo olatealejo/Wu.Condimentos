@@ -24,3 +24,15 @@ const cantidad = parseInt(inputCantidad.value) || 0;
 if (cantidad > 0) {
     carritoContador += cantidad;
     localStorage.setItem("carritoContador", carritoContador);
+
+     if (contadorElemento) {
+        contadorElemento.textContent = carritoContador;
+        
+        // Animación simple
+        contadorElemento.style.transform = "scale(1.3)";
+        setTimeout(() => {
+            contadorElemento.style.transform = "scale(1)";
+        }, 200);
+    }
+
+    alert(`Se añadieron ${cantidad} producto(s) al carrito. Total: ${carritoContador}`);
