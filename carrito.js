@@ -16,3 +16,7 @@ botonesCarrito.forEach(boton => {
         e.preventDefault();
     });
 });
+
+const formulario = boton.closest("form");
+const inputCantidad = formulario.querySelector('input[type="number"]');
+const cantidad = parseInt(inputCantidad.value) || 0;
