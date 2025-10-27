@@ -332,6 +332,8 @@ header nav a:active, header .log_in_sign_up a:active {
     color: #000;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    
 
 
 }
