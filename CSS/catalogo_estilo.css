@@ -399,3 +399,14 @@ body.modo-claro select {
     color: #222;
     border-color: #8B5A00;
 }
+
+body.modo-claro input[type="submit"] {
+    background-color: #8B5A00;
+    color: #fff;
+}
+
+body.modo-claro input[type="reset"] {
+    background-color: #fdf6e3;
+    color: #8B5A00;
+    border-color: #8B5A00;
+}
