@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const botonContactos = document.getElementById("boton-contactos");
 const seccionContactos = document.getElementById("contactos");
-
+if (botonContactos && seccionContactos) {
 // Ocultamos los contactos al inicio
 seccionContactos.classList.add("oculto");
 
@@ -70,3 +70,4 @@ botonContactos.addEventListener("click", () => {
   }
 
 });
+};
