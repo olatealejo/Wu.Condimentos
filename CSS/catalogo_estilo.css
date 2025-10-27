@@ -415,3 +415,7 @@ body.modo-claro footer {
     background-color: #fff8e5;
     border-top-color: #222;
 }
+
+body.modo-claro footer p {
+    color: #8B5A00;
+}
