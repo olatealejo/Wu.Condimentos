@@ -3,9 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let carritoContador = parseInt(localStorage.getItem("carritoContador")) || 0;
 
+function formatearContador(cantidad) {
+    return cantidad > 9 ? "9+" : cantidad.toString();
+}
+
 const contadorElemento = document.querySelector(".carrito-conteo");
 if (contadorElemento) {
-    contadorElemento.textContent = carritoContador;
+    contadorElemento.textContent = formatearContador(carritoContador);
 }
 
 const botonesCarrito = document.querySelectorAll('input[type="submit"][value="Añadir al carrito"]');
@@ -23,7 +27,7 @@ if (cantidad > 0) {
     localStorage.setItem("carritoContador", carritoContador);
 
      if (contadorElemento) {
-        contadorElemento.textContent = carritoContador;
+        contadorElemento.textContent = formatearContador(carritoContador);
         
         // Animación simple
         contadorElemento.style.transform = "scale(1.3)";
