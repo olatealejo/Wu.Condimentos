@@ -430,3 +430,8 @@ body.modo-claro .boton-tema:hover {
     background-color: #A06B00;
     box-shadow: 0 6px 16px rgba(139,90,0,0.4);
 }
+
+body.modo-claro .carrito-conteo {
+    background-color: #8B5A00;
+    color: #fff;
+}
