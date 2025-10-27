@@ -310,4 +310,7 @@ header nav a:active, header .log_in_sign_up a:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
 }
