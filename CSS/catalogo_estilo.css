@@ -338,4 +338,6 @@ header nav a:active, header .log_in_sign_up a:active {
 .boton-tema:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(255,215,0,0.5);
+    background-color: #fdb813;
+
 }
