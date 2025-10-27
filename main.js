@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const botonTema = document.getElementById("boton-tema");
     const body = document.body;
+    if (!botonTema) return;
 /*Verificar si ya se guardo un tema*/ 
     if (localStorage.getItem("tema") === "claro") {
     body.classList.add("modo-claro");
