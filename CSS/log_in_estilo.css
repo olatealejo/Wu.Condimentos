@@ -1,25 +1,22 @@
-/* fuente personalizada */
+
 @font-face {
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
 
-/* reset general: elimina márgenes y padding por defecto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* estilos del body */
 body {  
-    background-color: #121212; /* fondo oscuro */
-    color: #f5f5f5; /* texto claro */
+    background-color: #121212;
+    color: #f5f5f5; 
     line-height: 1.6; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* header */
 header {
     display: flex;
     align-items: center;
@@ -42,7 +39,6 @@ header .titulo h1 {
     font-weight: 700;
 }
 
-/* navegación y login */
 header nav ul, 
 header .log_in_sign_up ul {
     list-style: none;
@@ -64,7 +60,6 @@ header ul li a:hover {
     color: yellow;
 }
 
-/* títulos h2 y h3 */
 h2, h3 {
     text-align: center;
     color: #FFD700;
@@ -79,7 +74,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-/* main y formulario */
 main {
     max-width: 600px;
     margin: 40px auto;
@@ -112,7 +106,6 @@ legend {
     text-align: center;
 }
 
-/* labels e inputs */
 label {
     display: block;
     margin-top: 15px;
@@ -144,7 +137,6 @@ input:focus {
     color: #FFD700;
 }
 
-/* botones */
 button {
     padding: 10px 20px;
     background-color: #000;
@@ -161,7 +153,6 @@ button:hover {
     color: #000;
 }
 
-/* personalización del título */
 .titulo h1 {
     font-family: 'custom-font', sans-serif;
     color: #fff;
@@ -169,7 +160,6 @@ button:hover {
     font-weight: 700;
 }
 
-/* texto debajo de login */
 .login {
     text-align: center;
     margin-top: 20px;
@@ -185,7 +175,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* footer */
 footer {
     background-color: #000;
     color: #FFD700;
@@ -195,7 +184,6 @@ footer {
     margin-top: 50px;
 }
 
-/* clases utilitarias: botón, card, grid */
 .btn {
     padding: 10px 20px;
     border: none;
@@ -219,7 +207,6 @@ footer {
     gap: 20px;
 }
 
-/* animaciones base */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -229,7 +216,6 @@ footer {
     100% { opacity: 1; transform: scale(1); }
 }
 
-/* animaciones de entrada */
 .logo img {
     animation: zoomIn 1s ease forwards;
 }
@@ -243,7 +229,6 @@ legend {
     animation: fadeInUp 1.4s ease forwards;
 }
 
-/* efectos en inputs */
 input[type="email"],
 input[type="password"] {
     transition: all 0.4s ease;
@@ -253,7 +238,6 @@ input:focus {
     background-color: #000;
 }
 
-/* botones con hover animado */
 button {
     transition: all 0.4s ease;
 }
@@ -262,7 +246,6 @@ button:hover {
     box-shadow: 0 0 10px #FFD700;
 }
 
-/* enlace con subrayado animado */
 .login a {
     position: relative;
     transition: color 0.3s;
@@ -281,7 +264,6 @@ button:hover {
     width: 100%;
 }
 
-/* hover en main */
 main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
@@ -292,7 +274,6 @@ main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
 }
-/* logo con efecto flotante */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
@@ -301,7 +282,6 @@ main:hover {
     animation: float 4s ease-in-out infinite;
 }
 
-/* subrayado animado en nav */
 header nav a {
     position: relative;
     color: #fff;
@@ -328,12 +308,10 @@ nav {
     animation: fadeInUp 1.4s ease forwards;
 }
 
-/* animación para el footer */
 footer {
     animation: fadeInUp 1.5s ease forwards;
 }
 
-/* responsive */
 @media (max-width: 768px) {
     main {
         margin: 20px 10px;
@@ -370,7 +348,6 @@ footer {
         gap: 10px;
     }
 }
-/* Agregar estilos base al botón #boton-tema (padding, color, bordes) */
 #boton-tema {
     margin-left: 20px;
     padding: 10px 20px;
@@ -383,50 +360,41 @@ footer {
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-/* Añadir efecto hover al botón con escalado y sombra dorada */
 #boton-tema:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #FFD700;
 }
-/* Establecer color de fondo claro y color de texto oscuro en modo claro */
 body.modo-claro {
     background-color: #fdf6e3;
     color: #121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* Aplicar fondo claro en header y footer en modo claro */
 body.modo-claro header,
 body.modo-claro footer {
     background-color: #fff8e5;
     color: #121212;
     border-bottom: 2px solid #222;
 }
-/* Agregar borde superior al footer para separación visual */
 body.modo-claro footer {
     border-top: 2px solid #222;
 }
-/* Cambiar color de títulos y quitar sombra en modo claro */
 body.modo-claro h1,
 body.modo-claro h2,
 body.modo-claro h3 {
     color: #222;
     text-shadow: none;
 }
-/* Aplicar color oscuro a enlaces en modo claro */
 body.modo-claro a {
     color: #222;
     text-decoration: none;
 }
-/* Establecer hover dorado suave en enlaces modo claro */
 body.modo-claro a:hover {
     color: #fdb813;
 }
-/* Personalizar botón de tema en modo claro con fondo dorado */
 body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
 }
-/* Consolidar propiedades duplicadas del botón de tema */
 body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
@@ -439,12 +407,10 @@ body.modo-claro #boton-tema {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin-left: 20px;
 }
-/* Aplicar efecto hover al botón en modo claro */
 body.modo-claro #boton-tema:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
-/* Estilizar contenedor <main> en modo claro con fondo animado */
 body.modo-claro main {
     max-width: 600px;
     margin: 40px auto;
@@ -457,7 +423,6 @@ body.modo-claro main {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* Estilizar formulario en modo claro con degradado suave */
 body.modo-claro form {
     background: linear-gradient(to bottom, #fef7e5, #fff4cc);
     border: 2px solid #fdb813;
@@ -466,31 +431,26 @@ body.modo-claro form {
     padding: 30px;
     box-shadow: 0 10px 20px rgba(253, 184, 19, 0.15);
 }
-/* Aplicar color oscuro a leyendas y etiquetas */
 body.modo-claro legend,
 body.modo-claro label {
     color: #222;
 }
-/* Personalizar inputs con fondo claro y bordes grises */
 body.modo-claro input[type="email"],
 body.modo-claro input[type="password"] {
     background-color: #fffef9;
     border: 2px solid #ccc;
     color: #222;
 }
-/* Cambiar color de placeholder a gris claro */
 body.modo-claro input[type="email"]::placeholder,
 body.modo-claro input[type="password"]::placeholder {
     color: #888;
 }
-/* Estilo para inputs en foco con fondo más claro */
 body.modo-claro input:focus {
     border-color: #fdb813;
     background-color: #fff9ec;
     outline: none;
     color: #000;
 }
-/* Estilizar botones dentro de formulario en modo claro */
 body.modo-claro button {
     background-color: #fdb813;
     color: #222;
@@ -502,28 +462,22 @@ body.modo-claro button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Hover en botones modo claro con efecto de escala */
 body.modo-claro button:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
-/* Personalizar enlaces de login en modo claro */
 body.modo-claro .login a {
     color: #050505;
 }
-/* Hover sobre enlaces de login */
 body.modo-claro .login a:hover {
     text-decoration: underline;
 }
-/* Subrayado animado en enlaces de login en modo claro */
 body.modo-claro .login a::after {
     background-color: #000;
 }
-/* Ajustar color en hover de login a negro */
 body.modo-claro .login a:hover {
     color: #000;
 }
-/* Animación RGB para fondo del contenedor main */
 @keyframes gradient-lightmode {
     0% {
         background-position: 0% 50%;
@@ -535,7 +489,6 @@ body.modo-claro .login a:hover {
         background-position: 0% 50%;
     }
 }
-/* Hover en contenedor main para efecto flotante */
 body.modo-claro main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
