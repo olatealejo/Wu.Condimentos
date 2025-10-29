@@ -480,3 +480,8 @@ body.modo-claro .login a::after {
         width: 100%;
         margin-top: 10px;
     }
+    body.modo-claro .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
