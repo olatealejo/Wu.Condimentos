@@ -81,7 +81,7 @@ fieldset {
 legend {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FFD700;
+    color: #ffffff;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -89,7 +89,7 @@ label {
     display: block;
     margin-top: 15px;
     font-weight: 600;
-    color: #FFD700;
+    color: #ffffff;
 }
 input[type="text"],
 input[type="email"],
@@ -101,7 +101,7 @@ select {
     border: 2px solid #555;
     border-radius: 5px;
     background-color: #222;
-    color: #FFD700;
+    color: #ffffff;
     font-size: 1rem;
     transition: border 0.3s, background-color 0.3s, color 0.3s;
 }
@@ -113,7 +113,7 @@ select:focus {
     border-color: #FFD700;
     outline: none;
     background-color: #000;
-    color: #FFD700;
+    color: #ffffff;
 }
 .botones {
     display: flex;
@@ -123,7 +123,7 @@ select:focus {
 button {
     padding: 10px 20px;
     background-color: #000;
-    color: #FFD700;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -140,7 +140,7 @@ button:hover {
 }
 
 .login a {
-    color: #FFD700;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
