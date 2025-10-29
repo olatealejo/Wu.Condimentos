@@ -57,7 +57,9 @@ main {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
+    background: linear-gradient(270deg, #000000, #1a1a1a, #C6A300, #FFD700);
+    background-size: 600% 600%;
+    animation: gradient-darkmode 10s ease infinite, fadeInUp 1.5s ease forwards;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
     color: #ffffff !important;
