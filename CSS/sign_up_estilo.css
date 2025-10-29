@@ -471,3 +471,8 @@ body.modo-claro .login a::after {
     body.modo-claro header nav a {
         font-size: 20px;
     }
+    body.modo-claro .titulo h1 {
+        font-size: 1.7rem;
+        text-align: center;
+        width: 100%;
+    }
