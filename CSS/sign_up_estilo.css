@@ -313,6 +313,10 @@ footer {
     margin-left: 20px;
     font-size: 1rem;
 }
+#boton-tema:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FFD700;
+}
 body.modo-claro {
     background-color: #fdf6e3;
     color: #121212;
