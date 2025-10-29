@@ -463,3 +463,8 @@ body.modo-claro .login a::after {
         animation: none; 
         box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
+    body.modo-claro form {
+        padding: 20px;
+        border-radius: 8px;
+        background: #fffdf4; /* Fondo cálido y limpio */
+    }
