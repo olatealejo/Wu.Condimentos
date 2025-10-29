@@ -468,3 +468,6 @@ body.modo-claro .login a::after {
         border-radius: 8px;
         background: #fffdf4; /* Fondo cálido y limpio */
     }
+    body.modo-claro header nav a {
+        font-size: 20px;
+    }
