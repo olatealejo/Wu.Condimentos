@@ -523,3 +523,41 @@ body.modo-claro main:hover {
   .oculto {
     display: none;
   }
+  /* COMMIT 3 — MODO CLARO EN MÓVILES */
+@media (max-width: 768px) {
+    body.modo-claro main {
+        margin: 20px 10px;
+        padding: 15px;
+        max-width: 100%;
+        background: #fff8e5;
+        animation: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    body.modo-claro form {
+        padding: 20px;
+        border-radius: 8px;
+        background: #fffdf4;
+    }
+
+    body.modo-claro header nav a {
+        font-size: 20px;
+    }
+
+    body.modo-claro .titulo h1 {
+        font-size: 1.7rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    body.modo-claro button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    body.modo-claro .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
