@@ -65,7 +65,9 @@ main {
     color: #ffffff !important;
 }
 form {
-    background-color: #111;
+    background: linear-gradient(180deg, #000000, #111111, #C6A300);
+    background-size: 300% 300%;
+    animation: gradient-darkmode 12s ease infinite;
     border: 2px solid #FFD700;
     border-radius: 10px;
     padding: 30px;
