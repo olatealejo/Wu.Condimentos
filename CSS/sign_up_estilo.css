@@ -57,13 +57,16 @@ main {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: linear-gradient(270deg, #000000, #1a1a1a, #C6A300, #FFD700);
-    background-size: 600% 600%;
-    animation: gradient-darkmode 10s ease infinite, fadeInUp 1.5s ease forwards;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
     color: #ffffff !important;
+    background: linear-gradient(270deg, #000000, #1a1a1a, #C6A300, #FFD700);
+    background-size: 500% 500%;
+    animation: gradient-darkmode 12s ease-in-out infinite, fadeInUp 1.5s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
 }
+
 form {
     background: linear-gradient(180deg, #000000, #111111, #C6A300);
     background-size: 300% 300%;
@@ -189,12 +192,7 @@ footer {
 .logo img {
     animation: float 4s ease-in-out infinite;
 }
-main {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-    position: relative;
-    z-index: 1;
-}
+
 main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
@@ -202,9 +200,7 @@ main:hover {
 legend {
     animation: fadeInUp 1.4s ease forwards;
 }
-main {
-    animation: fadeInUp 1.5s ease forwards;
-}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
