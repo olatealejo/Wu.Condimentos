@@ -466,7 +466,7 @@ body.modo-claro .login a::after {
     body.modo-claro form {
         padding: 20px;
         border-radius: 8px;
-        background: #fffdf4; /* Fondo cálido y limpio */
+        background: #fffdf4; 
     }
     body.modo-claro header nav a {
         font-size: 20px;
@@ -475,4 +475,8 @@ body.modo-claro .login a::after {
         font-size: 1.7rem;
         text-align: center;
         width: 100%;
+    }
+    body.modo-claro button {
+        width: 100%;
+        margin-top: 10px;
     }
