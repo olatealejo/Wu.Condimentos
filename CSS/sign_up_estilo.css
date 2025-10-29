@@ -68,7 +68,7 @@ form {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-    color: #FFD700;
+    color: #ffffff !important;
 }
 fieldset {
     border: none;
