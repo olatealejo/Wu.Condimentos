@@ -455,3 +455,11 @@ body.modo-claro .login a::after {
     display: none;
   }
   @media (max-width: 768px) {
+    body.modo-claro main {
+        margin: 20px 10px;
+        padding: 15px;
+        max-width: 100%;
+        background: #fff8e5; 
+        animation: none; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
