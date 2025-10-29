@@ -78,10 +78,14 @@ main {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.3);
-    color: #FFD700;
+    color: #ffffff !important;
+    background: linear-gradient(270deg, #000000, #1a1a1a, #C6A300, #FFD700);
+    background-size: 500% 500%;
+    animation: gradient-darkmode 12s ease-in-out infinite, fadeInUp 1.5s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
 }
 
 form {
@@ -222,9 +226,7 @@ footer {
 .titulo h1 {
     animation: fadeInUp 1.2s ease forwards;
 }
-main {
-    animation: fadeInUp 1.5s ease forwards;
-}
+
 legend {
     animation: fadeInUp 1.4s ease forwards;
 }
@@ -264,12 +266,6 @@ button:hover {
     width: 100%;
 }
 
-main {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-    position: relative; 
-    z-index: 1;
-}
 main:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
