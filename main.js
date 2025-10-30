@@ -163,7 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const formulario = boton.closest("form");
   const inputCantidad = formulario.querySelector('input[type="number"]');
   const cantidad = parseInt(inputCantidad.value) || 0;
-  
+  js
+  if (cantidad > 0) {
+      carritoContador += cantidad;
+      localStorage.setItem("carritoContador", carritoContador);
 
 
 
