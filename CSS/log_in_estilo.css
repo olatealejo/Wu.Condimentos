@@ -1,14 +1,17 @@
+/* ===================== FONTS ===================== */
 @font-face {
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
 
+/* ===================== RESET ===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===================== BODY ===================== */
 body {  
     background-color: #000000;
     color: #f5f5f5; 
@@ -16,6 +19,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* ===================== HEADER ===================== */
 header {
     display: flex;
     align-items: center;
@@ -36,6 +40,8 @@ header .titulo h1 {
     color: #fff;
     font-size: 2.2rem;
     font-weight: 700;
+    font-family: 'custom-font', sans-serif;
+    animation: fadeInUp 1.2s ease forwards;
 }
 
 header nav ul, 
@@ -59,6 +65,16 @@ header ul li a:hover {
     color: yellow;
 }
 
+nav {
+    animation: fadeInUp 1.4s ease forwards;
+}
+
+/* ===================== LOGO ===================== */
+.logo img {
+    animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite;
+}
+
+/* ===================== HEADINGS ===================== */
 h2, h3 {
     text-align: center;
     color: #FFD700;
@@ -73,6 +89,7 @@ h2 {
     font-size: 1.8rem;
 }
 
+/* ===================== MAIN ===================== */
 main {
     max-width: 600px;
     margin: 40px auto;
@@ -80,7 +97,6 @@ main {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.25);
     color: #ffffff;
-
     background: linear-gradient(270deg, #000000, #000000, #111111, #1a1a1a, #ffd000b6, #FFD700);
     background-size: 500% 500%;
     animation: gradient-darkmode-suave 18s ease-in-out infinite, fadeInUp 1.5s ease forwards;
@@ -88,6 +104,7 @@ main {
     will-change: transform;
 }
 
+/* ===================== FORM ===================== */
 form {
     background: linear-gradient(180deg, #000000, #111111, #C6A20028);
     border: 2px solid #FFD700;
@@ -141,6 +158,7 @@ input:focus {
     color: #ffffff;
 }
 
+/* ===================== BUTTONS ===================== */
 button {
     padding: 10px 20px;
     background-color: #000;
@@ -157,13 +175,16 @@ button:hover {
     color: #000;
 }
 
-.titulo h1 {
-    font-family: 'custom-font', sans-serif;
-    color: #fff;
-    font-size: 2.2rem;
-    font-weight: 700;
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+/* ===================== LOGIN ===================== */
 .login {
     text-align: center;
     margin-top: 20px;
@@ -178,32 +199,8 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
-.logo img {
-    animation: zoomIn 1s ease forwards;
-}
-.titulo h1 {
-    animation: fadeInUp 1.2s ease forwards;
-}
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-}
-.logo img {
-    animation: float 4s ease-in-out infinite;
-}
-nav {
-    animation: fadeInUp 1.4s ease forwards;
-}
 
-.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
+/* ===================== CARDS / GRIDS ===================== */
 .card {
     background-color: #fff;
     border: 2px solid #FFD700;
@@ -217,6 +214,8 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
+/* ===================== FOOTER ===================== */
 footer {
     background-color: #000;
     color: #FFD700;
@@ -226,26 +225,8 @@ footer {
     margin-top: 50px;
     animation: fadeInUp 1.5s ease forwards;
 }
-@keyframes gradient-darkmode-suave {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 50% 50%; }
-    50% { background-position: 100% 50%; }
-    75% { background-position: 50% 50%; }
-    100% { background-position: 0% 50%; }
-}
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-@keyframes zoomIn {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
-}
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-}
 
+/* ===================== BOTON TEMA ===================== */
 #boton-tema {
     border-radius: 25px;
     padding: 10px 20px;
@@ -257,10 +238,43 @@ footer {
     margin-left: 20px;
     font-size: 1rem;
 }
+
 #boton-tema:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #FFD700;
 }
+
+/* ===================== KEYFRAMES ===================== */
+@keyframes gradient-darkmode-suave {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-lightmode {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ===================== MODO CLARO ===================== */
 body.modo-claro {
     background-color: #ffffff;
     color: #000000;
@@ -295,6 +309,7 @@ body.modo-claro a {
     color: #000000;
     text-decoration: none;
 }
+
 body.modo-claro a:hover {
     color: #fdb813;
 }
@@ -309,6 +324,7 @@ body.modo-claro #boton-tema {
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 body.modo-claro #boton-tema:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
@@ -379,9 +395,12 @@ body.modo-claro .login a {
 body.modo-claro .login a:hover {
     color: #fdb813;
 }
+
 body.modo-claro .login p {
     color: #222222; 
 }
+
+/* ===================== MEDIA QUERIES ===================== */
 @media (max-width: 768px) {
     main, body.modo-claro main {
         margin: 20px 10px;
@@ -425,9 +444,4 @@ body.modo-claro .login p {
         flex-direction: column;
         gap: 10px;
     }
-}
-@keyframes gradient-lightmode {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
