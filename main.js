@@ -155,6 +155,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (contadorElemento) {
       contadorElemento.textContent = formatearContador(carritoContador);
   }
+  js
+  botonesCarrito.forEach(boton => {
+      boton.addEventListener("click", (e) => {
+          e.preventDefault();
 
 
 
