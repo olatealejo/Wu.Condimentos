@@ -144,6 +144,8 @@ if (cantidad > 0) {
 
 js
 document.addEventListener("DOMContentLoaded", () => {
+  js
+  let carritoContador = parseInt(localStorage.getItem("carritoContador")) || 0;
 
 
 
