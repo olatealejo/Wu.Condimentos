@@ -170,7 +170,13 @@ document.addEventListener("DOMContentLoaded", () => {
       js
        if (contadorElemento) {
           contadorElemento.textContent = formatearContador(carritoContador);
-          
+          js
+          // Animación simple
+          contadorElemento.style.transform = "scale(1.3)";
+          setTimeout(() => {
+              contadorElemento.style.transform = "scale(1)";
+          }, 200);
+      }
 
 
 
