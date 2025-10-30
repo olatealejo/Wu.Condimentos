@@ -167,6 +167,7 @@ footer {
     padding: 15px;
     border-top: 3px solid #FFD700;
     margin-top: 50px;
+    animation: fadeInUp 1.5s ease forwards;
 }
 @keyframes gradient-darkmode-suave {
     0% { background-position: 0% 50%; }
@@ -269,9 +270,7 @@ header nav a:hover {
 header nav a:hover::after {
     width: 100%;
 }
-footer {
-    animation: fadeInUp 1.5s ease forwards;
-}
+
 @media (max-width: 768px) {
     main {
         margin: 20px 10px;

@@ -191,14 +191,8 @@ button:hover {
 .logo img {
     animation: float 4s ease-in-out infinite;
 }
-
-footer {
-    background-color: #000;
-    color: #FFD700;
-    text-align: center;
-    padding: 15px;
-    border-top: 3px solid #FFD700;
-    margin-top: 50px;
+nav {
+    animation: fadeInUp 1.4s ease forwards;
 }
 
 .btn {
@@ -223,7 +217,15 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
+footer {
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #FFD700;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease forwards;
+}
 @keyframes gradient-darkmode-suave {
     0% { background-position: 0% 50%; }
     25% { background-position: 50% 50%; }
