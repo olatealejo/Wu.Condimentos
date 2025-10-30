@@ -142,6 +142,9 @@ if (cantidad > 0) {
 });
 });
 
+js
+document.addEventListener("DOMContentLoaded", () => {
+
 
 
 
