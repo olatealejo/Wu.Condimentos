@@ -64,26 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+  if (!form) return;
 
+  // Todos los inputs que no sean botones de submit/reset
+  const inputs = Array.from(form.querySelectorAll("input:not([type=submit]):not([type=reset]), select, textarea"));
 
-/*script para ocultar aparecer la sección de */
+  inputs.forEach((input, index) => {
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault(); // evita enviar el form directamente
 
-const botonContactos = document.getElementById("boton-contactos");
-const seccionContactos = document.getElementById("contactos");
-if (botonContactos && seccionContactos) {
-// Ocultamos los contactos al inicio
-seccionContactos.classList.add("oculto");
+        const nextInput = inputs[index + 1];
 
-botonContactos.addEventListener("click", () => {
-  seccionContactos.classList.toggle("oculto");
-
-  if (seccionContactos.classList.contains("oculto")) {
-    botonContactos.textContent = "Mostrar contactos";
-  } else {
-    botonContactos.textContent = "Ocultar contactos";
-  }
-
+        if (nextInput) {
+          // pasa al siguiente input si hay
+          nextInput.focus();
+        } else {
+          // si es el último input, solo quitamos foco
+          input.blur();
+          // dejamos que el usuario haga click en el botón submit
+        }
+      }
+    });
+  });
 });
-};
+
+
 
 
