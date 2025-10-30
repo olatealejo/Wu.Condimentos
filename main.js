@@ -167,6 +167,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cantidad > 0) {
       carritoContador += cantidad;
       localStorage.setItem("carritoContador", carritoContador);
+      js
+       if (contadorElemento) {
+          contadorElemento.textContent = formatearContador(carritoContador);
+          
 
 
 
