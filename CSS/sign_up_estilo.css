@@ -415,3 +415,20 @@ body.modo-claro .login p { color: #222222; }
     button, body.modo-claro button { width: 100%; margin-top: 10px; }
     .botones, body.modo-claro .botones { flex-direction: column; gap: 10px; }
 }
+/* ===================== BOTON TEMA ===================== */
+#boton-tema {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+#boton-tema:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FFD700;
+}
