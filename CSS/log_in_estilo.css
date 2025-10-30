@@ -211,7 +211,6 @@ footer {
     gap: 20px;
 }
 
-/* ANIMACIONES */
 @keyframes gradient-darkmode-suave {
     0% { background-position: 0% 50%; }
     25% { background-position: 50% 50%; }
@@ -232,7 +231,6 @@ footer {
     50% { transform: translateY(-6px); }
 }
 
-/* MODO CLARO */
 body.modo-claro {
     background-color: #ffffff;
     color: #000000;
