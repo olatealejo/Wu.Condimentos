@@ -181,6 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`Se añadieron ${cantidad} producto(s) al carrito. Total: ${carritoContador}`);
 
        formulario.reset();
+       js
+  } else {
+      alert("Por favor, selecciona una cantidad mayor a 0");
+  }
 
 
 
