@@ -150,6 +150,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function formatearContador(cantidad) {
       return cantidad > 9 ? "9+" : cantidad.toString();
   }
+  js
+  const contadorElemento = document.querySelector(".carrito-conteo");
+  if (contadorElemento) {
+      contadorElemento.textContent = formatearContador(carritoContador);
+  }
 
 
 
