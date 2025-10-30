@@ -185,6 +185,10 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
       alert("Por favor, selecciona una cantidad mayor a 0");
   }
+  js
+  });
+  });
+});
 
 
 
