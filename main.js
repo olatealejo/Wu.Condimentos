@@ -85,20 +85,5 @@ botonContactos.addEventListener("click", () => {
 
 });
 };
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
 
-  // Evitar que Enter mande el formulario *mientras escribe en inputs*
-  form.addEventListener("keydown", (e) => {
-    // si la tecla no es Enter, no hacemos nada
-    if (e.key !== "Enter") return;
-
-    // si el usuario está escribiendo dentro de un input
-    if (e.target.tagName === "INPUT" && e.target.type !== "submit") {
-      e.preventDefault(); // evita el envío
-      e.target.blur(); // solo sale del input
-    }
-    // si está en un botón (submit), ahí sí dejamos que lo mande
-  });
-});
 
