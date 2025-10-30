@@ -1,20 +1,27 @@
+/* ===================== FONTS ===================== */
 @font-face {
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
 }
+
+/* ===================== RESET ===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ===================== BODY ===================== */
 body {
     background-color: #000000;
     color: #f5f5f5;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* ===================== HEADER ===================== */
 header {
     display: flex;
     align-items: center;
@@ -25,16 +32,18 @@ header {
     flex-wrap: wrap;
     font-family: 'custom-font';
 }
-header .titulo {
-    flex: 1;
-}
+
+header .titulo { flex: 1; }
+
 header .titulo h1 {
     margin: 0;
     color: #fff;
     font-size: 2.2rem;
     font-weight: 700;
     font-family: 'custom-font', sans-serif;
+    animation: fadeInUp 1.2s ease forwards;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -42,6 +51,7 @@ header nav ul {
     margin: 0;
     padding: 0;
 }
+
 header nav a {
     text-decoration: none;
     color: #fff;
@@ -49,10 +59,32 @@ header nav a {
     font-weight: 600;
     padding: 6px 12px;
     border-radius: 8px;
+    position: relative;
+    transition: color 0.3s ease;
 }
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
 header nav a:hover {
-    color: yellow;
+    color: #FFD700;
 }
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+nav { animation: fadeInUp 1.4s ease forwards; }
+
+/* ===================== MAIN ===================== */
 main {
     max-width: 600px;
     margin: 40px auto;
@@ -60,23 +92,19 @@ main {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.25);
     color: #ffffff !important;
-
-    background: linear-gradient(270deg,
-        #000000,
-        #000000,
-        #111111,
-        #1a1a1a,
-        #ffd000b6,
-        #FFD700
-    );
-
+    background: linear-gradient(270deg, #000000, #000000, #111111, #1a1a1a, #ffd000b6, #FFD700);
     background-size: 500% 500%;
     animation: gradient-darkmode-suave 18s ease-in-out infinite, fadeInUp 1.5s ease forwards;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
 }
 
+main:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
+}
 
+/* ===================== FORMULARIOS ===================== */
 form {
     background: linear-gradient(180deg, #000000, #111111, #c6a20028);
     border: 2px solid #FFD700;
@@ -86,23 +114,24 @@ form {
     color: #ffffff !important;
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
+fieldset { border: none; margin-bottom: 20px; }
+
 legend {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 15px;
     text-align: center;
+    animation: fadeInUp 1.4s ease forwards;
 }
+
 label {
     display: block;
     margin-top: 15px;
     font-weight: 600;
     color: #ffffff;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -115,23 +144,21 @@ select {
     background-color: #222;
     color: #ffffff;
     font-size: 1rem;
-    transition: border 0.3s, background-color 0.3s, color 0.3s;
+    transition: border 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
 }
-input::placeholder {
-    color: #bbb;
-}
+
+input::placeholder { color: #bbb; }
+
 input:focus,
 select:focus {
+    transform: scale(1.02);
     border-color: #FFD700;
     outline: none;
     background-color: #000;
     color: #ffffff;
 }
-.botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-}
+
+/* ===================== BOTONES ===================== */
 button {
     padding: 10px 20px;
     background-color: #000;
@@ -140,12 +167,23 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
+
 button:hover {
+    transform: scale(1.05);
     background-color: #FFD700;
     color: #000;
+    box-shadow: 0 0 10px #FFD700;
 }
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* ===================== LOGIN ===================== */
 .login {
     text-align: center;
     margin-top: 20px;
@@ -155,83 +193,10 @@ button:hover {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-}
-
-.login a:hover {
-    text-decoration: underline;
-}
-footer {
-    background-color: #000;
-    color: #FFD700;
-    text-align: center;
-    padding: 15px;
-    border-top: 3px solid #FFD700;
-    margin-top: 50px;
-    animation: fadeInUp 1.5s ease forwards;
-}
-@keyframes gradient-darkmode-suave {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 50% 50%; }
-    50% { background-position: 100% 50%; }
-    75% { background-position: 50% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-@keyframes zoomIn {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
-}
-.logo img {
-    animation: zoomIn 1s ease forwards;
-}
-.titulo h1 {
-    animation: fadeInUp 1.2s ease forwards;
-}
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-}
-.logo img {
-    animation: float 4s ease-in-out infinite;
-}
-
-main:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
-}
-legend {
-    animation: fadeInUp 1.4s ease forwards;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    transition: border 0.3s, background-color 0.3s, color 0.3s, transform 0.3s;
-}
-input:focus,
-select:focus {
-    transform: scale(1.02);
-    background-color: #000;
-    border-color: #FFD700;
-}
-button {
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-button:hover {
-    transform: scale(1.05);
-    background-color: #FFD700;
-    color: #000;
-    box-shadow: 0 0 10px #FFD700;
-}
-.login a {
     position: relative;
     transition: color 0.3s;
 }
+
 .login a::after {
     content: "";
     position: absolute;
@@ -242,120 +207,93 @@ button:hover {
     background-color: #ffffff;
     transition: width 0.3s ease;
 }
-.login a:hover::after {
-    width: 100%;
-}
-nav {
-    animation: fadeInUp 1.4s ease forwards;
-}
-header nav a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-header nav a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #FFD700;
-    transition: width 0.3s ease;
-}
-header nav a:hover {
-    color: #FFD700; 
-}
-header nav a:hover::after {
-    width: 100%;
+
+.login a:hover {
+    color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    main {
-        margin: 20px 10px;
-        padding: 15px;
-        max-width: 100%; 
-    }
-    form {
-        padding: 20px;
-    }
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    header nav a {
-        font-size: 22px; 
-    }
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .titulo h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        width: 100%;
-    }
-    button {
-        width: 100%;
-        margin-top: 10px;
-    }
-    .botones {
-        flex-direction: column;
-        gap: 10px;
-    }
+.login a:hover::after { width: 100%; }
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: #000;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #FFD700;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease forwards;
 }
-#boton-tema {
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin-left: 20px;
-    font-size: 1rem;
+
+/* ===================== LOGO / ANIMACIONES ===================== */
+.logo img {
+    animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite;
 }
-#boton-tema:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #FFD700;
+
+.titulo h1 { animation: fadeInUp 1.2s ease forwards; }
+
+/* ===================== KEYFRAMES ===================== */
+@keyframes gradient-darkmode-suave {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
 }
+
+@keyframes gradient-lightmode {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ===================== MODO CLARO ===================== */
 body.modo-claro {
     background-color: #ffffff;
     color: #121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body.modo-claro header,
 body.modo-claro footer {
     background-color: #ffffff;
     color: #121212;
     border-bottom: 2px solid #222;
 }
-body.modo-claro footer {
-    border-top: 2px solid #222;
-}
-body.modo-claro h1,
-body.modo-claro h2,
-body.modo-claro h3 {
-    color: #222;
-    text-shadow: none;
-}
+
+body.modo-claro footer { border-top: 2px solid #222; }
+
+body.modo-claro h1, body.modo-claro h2, body.modo-claro h3 { color: #222; text-shadow: none; }
+
 body.modo-claro a {
     color: #222;
     text-decoration: none;
 }
-body.modo-claro a:hover {
-    color: #fdb813;
-}
+
+body.modo-claro a:hover { color: #fdb813; }
+
 body.modo-claro #boton-tema {
     background-color: #fdb813;
     color: #222;
 }
-body.modo-claro #boton-tema:hover {
-    background-color: #ffcc33;
-    transform: scale(1.05);
-}
+
+body.modo-claro #boton-tema:hover { background-color: #ffcc33; transform: scale(1.05); }
+
 body.modo-claro main {
     max-width: 600px;
     margin: 40px auto;
@@ -365,25 +303,27 @@ body.modo-claro main {
     background: linear-gradient(270deg, #fdb813, #fffdf6, #f9f4e6);
     background-size: 600% 600%;
     animation: gradient-lightmode 10s ease infinite, fadeInUp 1.5s ease forwards;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.modo-claro main:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
+
 body.modo-claro form {
     background: linear-gradient(to bottom, #ffffff, #ffffff);
     border: 2px solid #fdb813;
     color: #121212;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 10px 20px rgba(253, 184, 19, 0.15);
+    box-shadow: 0 10px 20px rgba(253,184,19,0.15);
 }
+
 body.modo-claro legend,
-body.modo-claro label {
-    color: #222;
-}
+body.modo-claro label { color: #222; }
+
 body.modo-claro input,
 body.modo-claro select,
 body.modo-claro textarea {
@@ -396,10 +336,10 @@ body.modo-claro textarea {
     font-size: 1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
 body.modo-claro input::placeholder,
-body.modo-claro textarea::placeholder {
-    color: #888;
-}
+body.modo-claro textarea::placeholder { color: #888; }
+
 body.modo-claro input:focus,
 body.modo-claro select:focus,
 body.modo-claro textarea:focus {
@@ -408,6 +348,7 @@ body.modo-claro textarea:focus {
     outline: none;
     color: #000;
 }
+
 body.modo-claro button {
     background-color: #fdb813;
     color: #222;
@@ -417,36 +358,20 @@ body.modo-claro button {
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-body.modo-claro button:hover {
-    background-color: #ffcc33;
-    transform: scale(1.05);
-}
-body.modo-claro .login a {
-    color: #050505;
-}
-body.modo-claro .login a:hover {
-    text-decoration: underline;
-    color: #000;
-}
-body.modo-claro .login a::after {
-    background-color: #000;
-}
-body.modo-claro .login p {
-    color: #222222; 
-}
-@keyframes gradient-lightmode {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
+body.modo-claro button:hover { background-color: #ffcc33; transform: scale(1.05); }
+
+body.modo-claro .login a { color: #050505; }
+
+body.modo-claro .login a:hover { color: #000; text-decoration: underline; }
+
+body.modo-claro .login a::after { background-color: #000; }
+
+body.modo-claro .login p { color: #222222; }
+
+/* ===================== MODAL ===================== */
 .modal {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -455,9 +380,10 @@ body.modo-claro .login p {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-  }
-  .modal-contenido {
-    background-color: rgb(7, 7, 7);
+}
+
+.modal-contenido {
+    background-color: rgb(7,7,7);
     padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
@@ -465,46 +391,27 @@ body.modo-claro .login p {
     width: 90%;
     text-align: center;
     font-family: Arial, sans-serif;
-  }
-  .modal-cerrar {
+}
+
+.modal-cerrar {
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-  }
-  .oculto {
-    display: none;
-  }
-  @media (max-width: 768px) {
-    body.modo-claro main {
-        margin: 20px 10px;
-        padding: 15px;
-        max-width: 100%;
-        background: #fff8e5; 
-        animation: none; 
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    }
-    body.modo-claro form {
-        padding: 20px;
-        border-radius: 8px;
-        background: #fffdf4; 
-    }
-    body.modo-claro header nav a {
-        font-size: 20px;
-    }
-    body.modo-claro .titulo h1 {
-        font-size: 1.7rem;
-        text-align: center;
-        width: 100%;
-    }
-    body.modo-claro button {
-        width: 100%;
-        margin-top: 10px;
-    }
-    body.modo-claro .botones {
-        flex-direction: column;
-        gap: 10px;
-    }
+}
+
+.oculto { display: none; }
+
+/* ===================== MEDIA QUERIES ===================== */
+@media (max-width: 768px) {
+    main, body.modo-claro main { margin: 20px 10px; padding: 15px; max-width: 100%; }
+    form, body.modo-claro form { padding: 20px; border-radius: 8px; }
+    header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    header nav a, body.modo-claro header nav a { font-size: 22px; }
+    header nav ul { flex-direction: column; gap: 10px; }
+    .titulo h1, body.modo-claro .titulo h1 { font-size: 1.7rem; text-align: center; width: 100%; }
+    button, body.modo-claro button { width: 100%; margin-top: 10px; }
+    .botones, body.modo-claro .botones { flex-direction: column; gap: 10px; }
 }
