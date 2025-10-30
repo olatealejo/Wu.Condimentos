@@ -23,34 +23,48 @@ botonTema.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  // agarro el form, la contraseña y el modal para mostrar errores
   const form = document.querySelector("form");
   const passwordInput = document.getElementById("cont");
   const modal = document.getElementById("modal-error");
   const modalMensaje = document.getElementById("modal-mensaje");
   const modalCerrar = document.getElementById("modal-cerrar");
+
+  // si no encuentra algo, salgo para no romper nada
   if (!form || !passwordInput || !modal || !modalMensaje || !modalCerrar) return;
+
+  // cuando el usuario intente enviar el form
   form.addEventListener("submit", (e) => {
     const password = passwordInput.value;
-    const tieneMayuscula = /[A-Z]/.test(password);
-    const tieneNumero = /[0-9]/.test(password);
-    const tieneSimbolos = /[^a-zA-Z0-9]/.test(password);
+
+    // chequeos de la contraseña
+    const tieneMayuscula = /[A-Z]/.test(password); // al menos una mayúscula
+    const tieneNumero = /[0-9]/.test(password); // al menos un número
+    const tieneSimbolos = /[^a-zA-Z0-9]/.test(password); // si hay símbolos
+
+    // si no cumple con lo que queremos, cancelamos el envío
     if (!tieneMayuscula || !tieneNumero || tieneSimbolos) {
-      e.preventDefault();
+      e.preventDefault(); // no se envía el form
+      // muestro mensaje copado en el modal
       modalMensaje.textContent = "La contraseña debe contener al menos una letra mayúscula, un número y no debe contener símbolos.";
-      modal.classList.remove("oculto");
-      passwordInput.focus();
+      modal.classList.remove("oculto"); // lo hago visible
+      passwordInput.focus(); // pongo el cursor en la contraseña
     }
   });
+
+  // cerrar modal con la "x"
   modalCerrar.addEventListener("click", () => {
     modal.classList.add("oculto");
   });
+
+  // cerrar modal clickeando fuera del contenido
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("oculto");
     }
   });
+});
 
-}); 
 
 /*script para ocultar aparecer la sección de */
 
