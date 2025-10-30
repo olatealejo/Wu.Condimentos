@@ -21,7 +21,6 @@ botonTema.addEventListener("click", () => {
 
 });
 });
-
 document.addEventListener("DOMContentLoaded", () => {
   // agarro el form, la contraseña y el modal para mostrar errores
   const form = document.querySelector("form");
@@ -30,40 +29,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalMensaje = document.getElementById("modal-mensaje");
   const modalCerrar = document.getElementById("modal-cerrar");
 
-  // si no encuentra algo, salgo para no romper nada
+  // si falta algo del HTML, directamente no hacemos nada
   if (!form || !passwordInput || !modal || !modalMensaje || !modalCerrar) return;
 
-  // cuando el usuario intente enviar el form
+  // cuando quiera enviar el form
   form.addEventListener("submit", (e) => {
+    e.preventDefault(); // frenamos el envío para chequear primero la contraseña
+
     const password = passwordInput.value;
 
-    // chequeos de la contraseña
-    const tieneMayuscula = /[A-Z]/.test(password); // al menos una mayúscula
-    const tieneNumero = /[0-9]/.test(password); // al menos un número
-    const tieneSimbolos = /[^a-zA-Z0-9]/.test(password); // si hay símbolos
+    // requisitos de la contraseña
+    const tieneMayuscula = /[A-Z]/.test(password);
+    const tieneNumero = /[0-9]/.test(password);
+    const tieneSimbolos = /[^a-zA-Z0-9]/.test(password);
 
-    // si no cumple con lo que queremos, cancelamos el envío
+    // si no cumple, mostramos el modal
     if (!tieneMayuscula || !tieneNumero || tieneSimbolos) {
-      e.preventDefault(); // no se envía el form
-      // muestro mensaje copado en el modal
       modalMensaje.textContent = "La contraseña debe contener al menos una letra mayúscula, un número y no debe contener símbolos.";
-      modal.classList.remove("oculto"); // lo hago visible
-      passwordInput.focus(); // pongo el cursor en la contraseña
+      modal.classList.remove("oculto");
+      passwordInput.focus();
+    } 
+    else {
+      // si está todo bien → lo mandamos a la página de inicio
+      window.location.href = "index.html";
     }
   });
 
-  // cerrar modal con la "x"
+  // cerrar modal tocando la X
   modalCerrar.addEventListener("click", () => {
     modal.classList.add("oculto");
   });
 
-  // cerrar modal clickeando fuera del contenido
+  // cerrar clickeando afuera del modal
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("oculto");
     }
   });
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   if (!form) return;
