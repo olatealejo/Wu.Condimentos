@@ -177,6 +177,10 @@ document.addEventListener("DOMContentLoaded", () => {
               contadorElemento.style.transform = "scale(1)";
           }, 200);
       }
+      js
+      alert(`Se añadieron ${cantidad} producto(s) al carrito. Total: ${carritoContador}`);
+
+       formulario.reset();
 
 
 
