@@ -146,7 +146,10 @@ js
 document.addEventListener("DOMContentLoaded", () => {
   js
   let carritoContador = parseInt(localStorage.getItem("carritoContador")) || 0;
-
+  js
+  function formatearContador(cantidad) {
+      return cantidad > 9 ? "9+" : cantidad.toString();
+  }
 
 
 
