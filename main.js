@@ -159,6 +159,11 @@ document.addEventListener("DOMContentLoaded", () => {
   botonesCarrito.forEach(boton => {
       boton.addEventListener("click", (e) => {
           e.preventDefault();
+          js
+  const formulario = boton.closest("form");
+  const inputCantidad = formulario.querySelector('input[type="number"]');
+  const cantidad = parseInt(inputCantidad.value) || 0;
+  
 
 
 
