@@ -350,8 +350,9 @@ body.modo-claro .login a {
 body.modo-claro .login a:hover {
     color: #fdb813;
 }
-
-/* MEDIA QUERIES */
+body.modo-claro .login p {
+    color: #222222; 
+}
 @media (max-width: 768px) {
     main, body.modo-claro main {
         margin: 20px 10px;
@@ -396,8 +397,6 @@ body.modo-claro .login a:hover {
         gap: 10px;
     }
 }
-
-/* ANIMACIÓN GRADIENTE MODO CLARO */
 @keyframes gradient-lightmode {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }

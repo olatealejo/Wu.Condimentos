@@ -434,6 +434,9 @@ body.modo-claro .login a:hover {
 body.modo-claro .login a::after {
     background-color: #000;
 }
+body.modo-claro .login p {
+    color: #222222; 
+}
 @keyframes gradient-lightmode {
     0% {
         background-position: 0% 50%;
