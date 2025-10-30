@@ -178,6 +178,19 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
+.logo img {
+    animation: zoomIn 1s ease forwards;
+}
+.titulo h1 {
+    animation: fadeInUp 1.2s ease forwards;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+.logo img {
+    animation: float 4s ease-in-out infinite;
+}
 
 footer {
     background-color: #000;
@@ -231,14 +244,28 @@ footer {
     50% { transform: translateY(-6px); }
 }
 
+#boton-tema {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    font-size: 1rem;
+}
+#boton-tema:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FFD700;
+}
 body.modo-claro {
     background-color: #ffffff;
     color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body.modo-claro header,
-body.modo-claro footer {
+body.modo-claro header {
     background-color: #ffffff;
     color: #000000;
     border-bottom: 2px solid #222;
@@ -246,6 +273,8 @@ body.modo-claro footer {
 
 body.modo-claro footer {
     border-top: 2px solid #222;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 body.modo-claro h1,
