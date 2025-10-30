@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'custom-font';
     src: url(../fuentes/Bamboo_Regular.ttf) format("truetype");
@@ -80,17 +79,9 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.25);
-    color: #ffffff !important;
+    color: #ffffff;
 
-    background: linear-gradient(270deg,
-        #000000,
-        #000000,
-        #111111,
-        #1a1a1a,
-        #ffd000b6,
-        #FFD700
-    );
-
+    background: linear-gradient(270deg, #000000, #000000, #111111, #1a1a1a, #ffd000b6, #FFD700);
     background-size: 500% 500%;
     animation: gradient-darkmode-suave 18s ease-in-out infinite, fadeInUp 1.5s ease forwards;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -98,12 +89,12 @@ main {
 }
 
 form {
-    background: linear-gradient(180deg, #000000, #111111, #c6a20028);
+    background: linear-gradient(180deg, #000000, #111111, #C6A20028);
     border: 2px solid #FFD700;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 fieldset {
@@ -219,6 +210,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
+/* ANIMACIONES */
 @keyframes gradient-darkmode-suave {
     0% { background-position: 0% 50%; }
     25% { background-position: 50% 50%; }
@@ -234,236 +227,108 @@ footer {
     0% { opacity: 0; transform: scale(0.8); }
     100% { opacity: 1; transform: scale(1); }
 }
-
-.logo img {
-    animation: zoomIn 1s ease forwards;
-}
-.titulo h1 {
-    animation: fadeInUp 1.2s ease forwards;
-}
-
-legend {
-    animation: fadeInUp 1.4s ease forwards;
-}
-
-input[type="email"],
-input[type="password"] {
-    transition: all 0.4s ease;
-}
-input:focus {
-    transform: scale(1.02);
-    background-color: #000;
-}
-
-button {
-    transition: all 0.4s ease;
-}
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #FFD700;
-}
-
-.login a {
-    position: relative;
-    transition: color 0.3s;
-}
-.login a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
-}
-.login a:hover::after {
-    width: 100%;
-}
-
-main:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 30px rgba(255, 215, 0, 0.4);
-}
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
 }
-.logo img {
-    animation: float 4s ease-in-out infinite;
-}
 
-header nav a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-header nav a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #FFD700;
-    transition: width 0.3s ease;
-}
-header nav a:hover {
-    color: #FFD700; 
-}
-header nav a:hover::after {
-    width: 100%;
-}
-nav {
-    animation: fadeInUp 1.4s ease forwards;
-}
-
-footer {
-    animation: fadeInUp 1.5s ease forwards;
-}
-
-@media (max-width: 768px) {
-    main {
-        margin: 20px 10px;
-        padding: 15px;
-        max-width: 100%; 
-    }
-    form {
-        padding: 20px;
-    }
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    header nav a {
-        font-size: 22px; 
-    }
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .titulo h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        width: 100%;
-    }
-    button {
-        width: 100%;
-        margin-top: 10px;
-    }
-    .botones {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-#boton-tema {
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin-left: 20px;
-    font-size: 1rem;
-}
-#boton-tema:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #FFD700;
-}
+/* MODO CLARO */
 body.modo-claro {
-    background-color: #fdf6e3;
-    color: #121212;
+    background-color: #ffffff;
+    color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body.modo-claro header,
 body.modo-claro footer {
-    background-color: #fff8e5;
-    color: #121212;
+    background-color: #ffffff;
+    color: #000000;
     border-bottom: 2px solid #222;
 }
+
 body.modo-claro footer {
     border-top: 2px solid #222;
 }
+
 body.modo-claro h1,
 body.modo-claro h2,
-body.modo-claro h3 {
-    color: #222;
+body.modo-claro h3,
+body.modo-claro p,
+body.modo-claro span,
+body.modo-claro label,
+body.modo-claro legend,
+body.modo-claro div {
+    color: #000000 !important;
     text-shadow: none;
 }
+
 body.modo-claro a {
-    color: #222;
+    color: #000000;
     text-decoration: none;
 }
 body.modo-claro a:hover {
     color: #fdb813;
 }
+
 body.modo-claro #boton-tema {
     background-color: #fdb813;
-    color: #222;
-}
-body.modo-claro #boton-tema {
-    background-color: #fdb813;
-    color: #222;
-    border: none;
-    padding: 10px 20px;
+    color: #000000;
     border-radius: 25px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin-left: 20px;
 }
 body.modo-claro #boton-tema:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
+
 body.modo-claro main {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 10px;
-    color: #121212;
+    color: #000000;
     background: linear-gradient(270deg, #fdb813, #fffdf6, #f9f4e6);
     background-size: 600% 600%;
     animation: gradient-lightmode 10s ease infinite, fadeInUp 1.5s ease forwards;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 body.modo-claro form {
-    background: linear-gradient(to bottom, #fef7e5, #fff4cc);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     border: 2px solid #fdb813;
-    color: #121212;
+    color: #000000 !important;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 10px 20px rgba(253, 184, 19, 0.15);
 }
-body.modo-claro legend,
-body.modo-claro label {
-    color: #222;
-}
+
 body.modo-claro input[type="email"],
 body.modo-claro input[type="password"] {
     background-color: #fffef9;
     border: 2px solid #ccc;
-    color: #222;
+    color: #000000;
 }
+
 body.modo-claro input[type="email"]::placeholder,
 body.modo-claro input[type="password"]::placeholder {
-    color: #888;
+    color: #555;
 }
+
 body.modo-claro input:focus {
     border-color: #fdb813;
     background-color: #fff9ec;
     outline: none;
     color: #000;
 }
+
 body.modo-claro button {
     background-color: #fdb813;
-    color: #222;
+    color: #000000;
     border-radius: 8px;
     font-weight: bold;
     border: none;
@@ -472,102 +337,69 @@ body.modo-claro button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 body.modo-claro button:hover {
     background-color: #ffcc33;
     transform: scale(1.05);
 }
+
 body.modo-claro .login a {
-    color: #050505;
+    color: #000000;
 }
+
 body.modo-claro .login a:hover {
-    text-decoration: underline;
+    color: #fdb813;
 }
-body.modo-claro .login a::after {
-    background-color: #000;
-}
-body.modo-claro .login a:hover {
-    color: #000;
-}
-@keyframes gradient-lightmode {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-body.modo-claro main:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-.modal {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  .modal-contenido {
-    background-color: rgb(7, 7, 7);
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    max-width: 400px;
-    width: 90%;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  .modal-cerrar {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .oculto {
-    display: none;
-  }
-  /* COMMIT 3 — MODO CLARO EN MÓVILES */
+
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
-    body.modo-claro main {
+    main, body.modo-claro main {
         margin: 20px 10px;
         padding: 15px;
         max-width: 100%;
-        background: #fff8e5;
-        animation: none;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
 
-    body.modo-claro form {
+    form, body.modo-claro form {
         padding: 20px;
         border-radius: 8px;
-        background: #fffdf4;
     }
 
-    body.modo-claro header nav a {
-        font-size: 20px;
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
-    body.modo-claro .titulo h1 {
-        font-size: 1.7rem;
+    header nav a, body.modo-claro header nav a {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem;
         text-align: center;
         width: 100%;
     }
 
-    body.modo-claro button {
+    button {
         width: 100%;
         margin-top: 10px;
     }
 
-    body.modo-claro .botones {
+    .botones {
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 }
 
+/* ANIMACIÓN GRADIENTE MODO CLARO */
+@keyframes gradient-lightmode {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

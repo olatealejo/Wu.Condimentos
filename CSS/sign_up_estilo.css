@@ -323,13 +323,13 @@ footer {
     box-shadow: 0 0 10px #FFD700;
 }
 body.modo-claro {
-    background-color: #fdf6e3;
+    background-color: #ffffff;
     color: #121212;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body.modo-claro header,
 body.modo-claro footer {
-    background-color: #fff8e5;
+    background-color: #ffffff;
     color: #121212;
     border-bottom: 2px solid #222;
 }
@@ -374,7 +374,7 @@ body.modo-claro main:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 body.modo-claro form {
-    background: linear-gradient(to bottom, #fef7e5, #fff4cc);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     border: 2px solid #fdb813;
     color: #121212;
     border-radius: 10px;
