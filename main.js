@@ -21,6 +21,25 @@ botonTema.addEventListener("click", () => {
 
 });
 });
+
+/*script para ocultar aparecer la sección de */
+
+const botonContactos = document.getElementById("boton-contactos");
+const seccionContactos = document.getElementById("contactos");
+
+// Ocultamos los contactos al inicio
+seccionContactos.classList.add("oculto");
+
+botonContactos.addEventListener("click", () => {
+  seccionContactos.classList.toggle("oculto");
+
+  if (seccionContactos.classList.contains("oculto")) {
+    botonContactos.textContent = "Mostrar contactos";
+  } else {
+    botonContactos.textContent = "Ocultar contactos";
+  }
+
+});
 document.addEventListener("DOMContentLoaded", () => {
   // agarro el form, la contraseña y el modal para mostrar errores
   const form = document.querySelector("form");
@@ -189,6 +208,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   });
 });
-
-
 
