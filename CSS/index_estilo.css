@@ -686,5 +686,5 @@ body.modo-claro .boton-tema {
 .oculto {
   opacity: 0;
   max-height: 0;
-  pointer-events: none;
+  pointer-events:none;
 }
