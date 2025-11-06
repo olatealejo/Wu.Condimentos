@@ -38,6 +38,13 @@ catalogo_estilo.css: Alejo Olate y Gino Forneron <br>
 TP6: <br>
 En este trabajo que se trataba sobre los movimientos del sitio web, usamos principalmente atributos como el rgb, @keyframes, media, transform, transition, animation, hover, etc. <br>
 
+TP7: <br>
+En este trabajo, que se trató sobre JavaScript básico, aprendimos a manejar la interacción entre el usuario y la página web.
+Usamos principalmente manipulación del DOM con métodos como getElementById() y querySelector().
+También trabajamos con eventos (como onclick o addEventListener) para que los botones y otros elementos respondieran a las acciones del usuario.
+ <br>
+
+
 
 
 
